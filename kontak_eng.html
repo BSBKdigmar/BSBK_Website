@@ -1,0 +1,230 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_kontak.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Monday – Friday (08:00 – 17:00)</span>
+            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Construction</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">About Us</a>
+                <a href="layanan_eng.html">Services</a>
+                <a href="project_eng.html">Projects</a>
+                <a href="blog_eng.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Contact <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                    <button id="lang-btn">
+                        <span id="current-flag">🇺🇸</span>
+                        <span id="current-lang-text">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="lang-menu">
+                    <a href="kontak.html">🇮🇩 Indonesian</a>
+                    <a href="kontak_eng.html">🇺🇸 English</a>
+                    </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                </div>
+            </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <button class="btn-blue w-full">Request Project Quote</button>
+        </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="contact-wrapper">
+
+            <!-- LEFT INFO -->
+            <div class="contact-left">
+                <div class="contact-info-vertical">
+
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>(021) 29464249<br>0821 3078 7514</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@bsbkonstruksi.co.id</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>Cileungsi, Bogor Regency, 16820</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="contact-right">
+                <span class="contact-label">CONTACT US</span>
+                <h2>Have a question? Feel free to send us an email anytime</h2>
+
+                <form class="contact-form" action="https://formspree.io/f/maqwwvkg" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="nama_lengkap" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" name="nomor_telepon" placeholder="Phone Number">
+                        <input type="text" name="subjek" placeholder="Subject" required>
+                    </div>
+
+                    <textarea name="pesan" placeholder="Describe your project or inquiry" rows="5" required></textarea>
+
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_subject" value="Website Contact – BSBK">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="thank-you.html">
+
+                    <button type="submit" class="btn-yellow">Send Mail</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <div class="container">
+            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Narogong+No.KM+16,+Limus+Nunggal,+Cileungsi,+Bogor,+Jawa+Barat+16820" target="_blank" class="map-wrapper">
+                <iframe src="https://www.google.com/maps?q=Jl.+Raya+Narogong+No.KM+16,+Limus+Nunggal,+Cileungsi,+Bogor,+Jawa+Barat+16820&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map-overlay">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>View Location on Google Maps</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal,<br>Cileungsi, Bogor Regency, West Java<br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Bogor Regency</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 – 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index_eng.html">Home</a>
+                    <a href="TentangKami_eng.html">Tentang Kami</a>
+                    <a href="layanan_eng.html">Layanan</a>
+                    <a href="project_eng.html">Project</a>
+                    <a href="blog_eng.html">Blog</a>
+                    <a href="kontak_eng.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

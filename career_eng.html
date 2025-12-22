@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+    
+    <link rel="stylesheet" href="css/style_career.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Top Contact Bar -->
+<div class="top-contact-bar">
+    <div class="container flex-end contact-items">
+        <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+        <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+        <span><i class="fas fa-clock"></i> Monday – Friday (08:00 – 17:00)</span>
+        <a href="kontak.html" class="btn-blue">Request a Free Consultation</a>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/Logo BSBK Transparent.png" alt="Company Logo" class="logo-icon">
+            <span>Bayu Surya Bakti <br> Construction</span>
+        </a>
+
+        <div class="menu-desktop">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                </div>
+            </div>
+
+            <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇺🇸</span>
+                    <span id="current-lang-text">EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-menu">
+                    <a href="career.html">🇮🇩 Indonesian</a>
+                    <a href="career_eng.html">🇺🇸 English</a>
+                </div>
+            </div>
+
+            <a href="#" class="round-yellow"><i class="fas fa-phone-alt"></i></a>
+            <a href="#" class="round-yellow"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Career Section -->
+<section class="career-section">
+    <div class="container">
+
+        <h1 class="career-title">
+            Welcome to the Careers Page of PT Bayu Surya Bakti Construction
+        </h1>
+
+        <!-- HERO -->
+        <div class="career-hero">
+            <div class="career-image">
+                <img src="images/WhatsApp-Image-2023-09-18-at-2.19.45-PM-1536x1149.jpeg" alt="Our Team">
+            </div>
+
+            <div class="career-intro">
+                <p>
+                    We are a company engaged in water and wastewater treatment construction,
+                    with a strong focus on renewable energy projects. We believe that a
+                    skilled and committed team is the key to achieving our company’s vision
+                    and mission.
+                </p>
+
+                <p>
+                    We are always looking for talented, passionate, and experienced
+                    individuals to join us in creating a positive impact on the
+                    environment and society.
+                </p>
+            </div>
+        </div>
+
+        <!-- WHY JOIN US -->
+        <div class="career-block">
+            <h2>Why Join Us?</h2>
+
+            <p>
+                <strong>High-Quality Projects:</strong>
+                PT Bayu Surya Bakti Construction has extensive experience in delivering
+                high-quality water and wastewater treatment projects, as well as renewable
+                energy initiatives. Joining us gives you the opportunity to be involved in
+                meaningful projects that positively impact the environment and communities.
+            </p>
+
+            <p>
+                <strong>An Inspiring Work Environment:</strong>
+                We foster a workplace where every team member is valued and empowered.
+                Collaboration, teamwork, and openness are at the core of our culture,
+                ensuring everyone feels appreciated and motivated to give their best.
+            </p>
+
+            <p>
+                <strong>Professional Development:</strong>
+                We are committed to helping you grow your potential and skills. Through
+                continuous training and ongoing support, we help you develop both
+                professionally and personally.
+            </p>
+
+            <p>
+                <strong>Contribution to the Environment and Society:</strong>
+                Joining PT Bayu Surya Bakti Construction means actively contributing to
+                environmental solutions and supporting the use of renewable resources
+                for a more sustainable future.
+            </p>
+        </div>
+
+        <!-- HOW TO APPLY -->
+        <div class="career-block">
+            <h2>How to Apply</h2>
+
+            <form
+                class="career-form"
+                action="https://formspree.io/f/mjgbbleq"
+                method="POST" 
+                enctype="multipart/form-data"
+            >
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="full_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Position Applied For</label>
+                    <input type="text" name="position" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message / Cover Letter</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group"> 
+                    <label>CV / Resume Link (Google Drive)</label> 
+                    <input type="url" name="CV_Link" placeholder="https://drive.google.com/..." required> 
+                    <small style="font-size:13px; color:#cbd5f5;">
+                        Upload your CV to Google Drive and set access to
+                        “Anyone with the link”
+                    </small> 
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Job Application - PT BSBK">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-primary">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>Office Address</h4>
+            <p>
+                Jl. Raya Narogong No.KM 16, Limus Nunggal,<br>
+                Cileungsi District, Bogor Regency, West Java<br>
+                16820
+            </p>
+            <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Bogor Regency</p>
+            <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+            <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h4>Useful Links</h4>
+            <div class="footer-links">
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">Tentang Kami</a>
+                <a href="layanan_eng.html">Layanan</a>
+                <a href="project_eng.html">Project</a>
+                <a href="blog_eng.html">Blog</a>
+                <a href="kontak_eng.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2023</p>
+        <p>All Rights Reserved</p>
+    </div>
+</footer>
+
+<a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>

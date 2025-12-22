@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_TentangKami.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Senin - Jumat (08.00 - 17.00)</span>
+            <a href="kontak.html" class="btn-blue"> Meminta Konsultasi Gratis</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Konstruksi</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇮🇩</span>
+                    <span id="current-lang-text">ID</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="TentangKami.html">🇮🇩 Indonesia</a>
+                    <a href="TentangKami_eng.html">🇺🇸 English</a>
+                </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Beranda</a>
+            <a href="TentangKami.html">Tentang Kami</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="project.html">Project</a>
+            <a href="blog.html">Blog</a>
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Kontak <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="kontak.html">Kontak Kami</a>
+                    <a href="career.html">Karier</a>
+                </div>
+            </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <button class="btn-blue w-full">Request Project Quote</button>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-header-section">
+        <h1 class="about-title">Tentang Kami - PT Bayu Surya Bakti Konstruksi</h1>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/Profile.jpeg" alt="Meeting Image">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    <strong>PT Bayu Surya Bakti Konstruksi (BSBK)</strong> adalah perusahaan konstruksi yang mengkhususkan diri dalam proyek pengolahan air dan air limbah.
+                    Sejak didirikan, kami berkomitmen untuk menyediakan solusi inovatif dan berkelanjutan untuk tantangan pengelolaan air, berkontribusi pada pelestarian lingkungan dan kesejahteraan masyarakat.
+                </p>
+
+                <p>
+                    Untuk informasi lebih rinci mengenai PT BSBK, Anda dapat mengunduh Profil Perusahaan kami dalam file di bawah ini.
+                </p>
+
+                <a href="D:/HTML CSS/Compro PT. Bayu Surya Bakti Konstruksi.pdf" download="Compro PT. Bayu Surya Bakti Konstruksi.pdf" class="download-file">Download Profil Perusahaan</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VISI & MISI SECTION -->
+    <section class="visi-misi-section">
+        <div class="visi-misi-container">
+
+            <div class="visi-misi-box">
+                <div class="icon-circle">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <h3>Visi</h3>
+                <p>
+                    Visi kami menjadi perusahaan terkemuka dalam pengolahan air (air bersih dan air limbah) serta bangunan air lainnya yang menyediakan air berfokus pada pembangunan berkelanjutan...
+                </p>
+            </div>
+
+            <div class="visi-misi-box">
+                <div class="icon-circle">
+                    <i class="fas fa-gear"></i>
+                </div>
+
+                <h3>Misi</h3>
+                <ul>
+                    <li>Menyediakan produk dan jasa berkualitas untuk kepuasan pelanggan.</li>
+                    <li>Mendorong praktik ramah lingkungan dalam setiap operasi.</li>
+                    <li>Berinvestasi dalam riset dan pengembangan.</li>
+                    <li>Berkontribusi positif terhadap masyarakat lokal.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- TAB BUTTON SECTION -->
+    <div class="tabs-section container" style="margin-top:40px;">
+
+        <!-- Radio Buttons -->
+        <input type="radio" name="tabs" id="tab1" checked>
+        <label for="tab1" class="tab-btn">Nilai - Nilai Kami</label>
+
+        <input type="radio" name="tabs" id="tab2">
+        <label for="tab2" class="tab-btn">Kisah Tentang Kami</label>
+
+        <input type="radio" name="tabs" id="tab3">
+        <label for="tab3" class="tab-btn">Penelitian dan Pengembangan</label>
+
+        <!-- TAB CONTENT 1 -->
+        <div class="tab-content" id="content1">
+            <section class="nilai-section">
+                <p><strong>Inovasi:</strong> Kami berusaha terus mengeksplorasi ide dan teknologi baru untuk meningkatkan praktik pengelolaan air.</p>
+                <p><strong>Integritas:</strong> Kami menjunjung tinggi standar etika tertinggi dalam setiap interaksi.</p>
+                <p><strong>Kolaborasi:</strong> Kami percaya pada kekuatan kerja sama.</p>
+                <p><strong>Kualitas:</strong> Kami memprioritaskan kualitas dalam pekerjaan.</p>
+            </section>
+        </div>
+
+        <!-- TAB CONTENT 2 -->
+        <div class="tab-content" id="content2">
+            <p>Perjalanan PT Bayu Surya Bakti Konstruksi dimulai dengan gagasan visioner dari pendiri kami, Bapak Ir. I Nyoman Yasa Negara yang sudah berkecimpung dalam industri pengolahan air selama kurang lebih 20 tahun. Melihat tantangan semakin meningkatnya kelangkaan air dan polusi di Indonesia, beliau terinspirasi untuk mendirikan perusahaan yang dapat berkontribusi secara positif pada lingkup pengelolaan air di Indonesia.</p>
+            <p>Perusahaan ini didirikan pada tahun 2014 dengan tim kecil dari para profesional yang berdedikasi. Selama bertahun-tahun, kami telah berhasil menyelesaikan berbagai proyek pengolahan air dan air limbah di seluruh Indonesia. Portofolio kami mencakup solusi terkini untuk penyaringan air, pengolahan air limbah industri, dan pengolahan air daur ulang. Dengan setiap proyek, kami berusaha untuk meningkatkan standar tanggung jawab lingkungan dan efisiensi dalam pengelolaan air.</p>
+            <div class="tab-photos">
+                <img src="images/Profile/1.jpeg" alt="">
+                <img src="images/Profile/2.jpeg" alt="">
+                <img src="images/Profile/3.jpeg" alt="">
+                <img src="images/Profile/4.jpeg" alt="">
+                <img src="images/Profile/5.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 3 -->
+        <div class="tab-content" id="content3">
+            <p>Dalam komitmen kami untuk tetap berada di garis depan teknologi pengolahan air, PT BSBK telah menginvestasikan banyak pada penelitian dan pengembangan. Inisiatif R&D kami berfokus pada eksplorasi metode, bahan, dan proses baru untuk meningkatkan efisiensi dan keberlanjutan proyek kami. Kami melakukan uji coba dan percobaan yang ekstensif untuk menemukan solusi inovatif yang sesuai dengan visi kami untuk lingkungan yang lebih hijau dan lebih sehat.</p>
+            <p>Melalui pembelajaran berkelanjutan dan kolaborasi dengan para ahli industri, PT BSBK tetap berkomitmen untuk menjadi pionir dalam kemajuan teknologi pengolahan air dan air limbah, menciptakan dampak positif yang langgeng bagi lingkungan dan masyarakat.</p>
+            <p>Dalam salah satu usaha pengembangan teknologi yang digunakan oleh PT Bayu Surya Bakti Konstruksi telah melakukan pilot plant testing membrane ini di Siak – Riau.</p>
+            <p>Percobaan yang dilakukan dengan inlet air gambut dan inlet dari air produk dari pengolahan conventional dilokasi. Dengan menguji kemampuan membran ini pada air pada Sungai Siak yang memiliki kandungan warna cukup tinggi, air produk yang di dapat ternyata dapat memenuhi standar air minum untuk warna dan kekeruhan.</p>
+            <p>Recovery rate yang didapat dengan air baku:</p>
+            <li>Dengan air baku air berwarna: <strong>50% – 60% Polishing</strong></li>
+            <li>Dengan air baku air produk pengolahan konvensional di lokasi: <strong>70% – 78%</strong></li>
+        </div>
+
+    </div>
+
+    <!-- Form -->
+
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <!-- LEFT -->
+            <div>
+                <h2>Konsultasi Gratis</h2>
+                <p>
+                    Ceritakan kebutuhan proyek Anda.  
+                    Tim kami akan menghubungi Anda dalam 1×24 jam.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Respon cepat</li>
+                    <li><i class="fas fa-check"></i> Konsultasi tanpa biaya</li>
+                    <li><i class="fas fa-check"></i> Solusi sesuai kebutuhan</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input
+                    type="text"
+                    name="nama_lengkap"
+                    placeholder="Nama Lengkap"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="nomor_telepon"
+                    placeholder="Nomor Telepon"
+                >
+
+                <input
+                    type="text"
+                    name="subjek"
+                    placeholder="Subjek"
+                >
+
+                <textarea
+                    name="pesan"
+                    placeholder="Ceritakan kebutuhan proyek Anda"
+                    rows="4"
+                ></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Permintaan Konsultasi - Website BSBK">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">
+                    Kirim Konsultasi
+                </button>
+            </form>
+
+        </div>
+    </section>
+        
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Kabupaten Bogor</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="TentangKami.html">Tentang Kami</a>
+                    <a href="layanan.html">Layanan</a>
+                    <a href="project.html">Project</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+        
+        <!-- WhatsApp -->
+        <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+        <script src="script.js"></script>
+</body>
+</html>

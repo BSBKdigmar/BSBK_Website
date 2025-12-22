@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_project.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Monday - Friday (08:00 - 17:00)</span>
+            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Construction</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">About Us</a>
+                <a href="layanan_eng.html">Services</a>
+                <a href="project_eng.html">Projects</a>
+                <a href="blog_eng.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Contact <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak_eng.html">Contact Us</a>
+                        <a href="career_eng.html">Careers</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                    <button id="lang-btn">
+                        <span id="current-flag">🇺🇸</span>
+                        <span id="current-lang-text">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                
+                    <div class="lang-menu">
+                        <a href="project-page2.html">🇮🇩 Indonesian</a>
+                        <a href="project-page2_eng.html">🇺🇸 English</a>
+                    </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                </div>
+            </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <button class="btn-blue w-full">Request Project Quote</button>
+        </div>
+    </nav>
+
+    <!-- PROJECT GALLERY -->
+    <section class="project-gallery container">
+
+        <!-- FILTER RADIOS -->
+        <input type="radio" name="filter" id="filter-all" checked hidden>
+        <input type="radio" name="filter" id="filter-energi" hidden>
+        <input type="radio" name="filter" id="filter-air" hidden>
+        <input type="radio" name="filter" id="filter-limbah" hidden>
+
+        <div class="gallery-tabs">
+            <label for="filter-all">All</label>
+            <label for="filter-energi">Renewable Energy</label>
+            <label for="filter-air">Water Treatment Installation</label>
+            <label for="filter-limbah">Wastewater Treatment</label>
+        </div>
+
+    <!-- post 13 -->
+
+    <!-- GRID -->
+    <div class="gallery-grid">
+
+        <!-- PROJECT CARD -->
+        <div class="gallery-card energy">
+
+             <!-- SLIDER -->
+            <div class="gallery-slider">
+
+                <!-- RADIO CONTROLS -->
+                <input type="radio" name="slide13" id="s13-1" checked>
+                <input type="radio" name="slide13" id="s13-2">
+                <input type="radio" name="slide13" id="s13-3">
+
+                <!-- SLIDES -->
+                <div class="slides3">
+                    <img src="images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.15.28-460x460.jpeg">
+                    <img src="images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.15.28.jpeg">
+                    <img src="images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.16.07-460x460.jpeg">
+                </div>
+
+                <!-- DOTS -->
+                <div class="slider-dots">
+                    <label for="s13-1"></label>
+                    <label for="s13-2"></label>
+                    <label for="s13-3"></label>
+                </div>
+            </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">PAM Jaya Project</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> PAM Jaya Cengkareng, Jakarta</div>
+                <div><strong>Scope:</strong> Booster Pump Rehabilitation, Booster Pump Installation, and Panel & Instrumentation Installation</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 14 -->
+
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">PT Solusi Bangun Indonesia Project</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Palembang, South Sumatra</div>
+                <div><strong>Scope of Work:</strong> Deep Well Construction, Pipe Installation, and Pump Installation</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 15 -->
+
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Water Treatment Installation at Jakabaring Sport City</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Palembang, West Sumatra</div>
+                <div><strong>System:</strong> Media Filters (Sand Filter and Carbon Filter), Ultrafiltration, and Solar Panels</div>
+                <div><strong>Capacity:</strong> Media Filters (3 Liters per second), Ultrafiltration (2.5 Liters per second), Solar Panels (22 kW)</div>
+                <div><strong>Scope of Work:</strong> Civil Works for Operational Buildings, Water Treatment Installation, SCADA System, Piping Network, and Water Fountain & Dispenser Installation</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 16 -->
+    
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Bali Water Treatment Installation</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Benoa Port, Bali</div>
+                <div><strong>System:</strong> Sea Water Reverse Osmosis and Ultrafiltration</div>
+                <div><strong>Capacity:</strong> SWRO (7 Liters per second), Ultrafiltration (26 Liters per second)</div>
+                <div><strong>Scope of Work:</strong> Water Treatment Installation and SCADA System</div>
+            </div>
+        </a>
+
+    </div>
+
+       <!-- ROW 2 --> 
+
+    <!-- post 17 -->
+
+    <!-- PROJECT CARD -->
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Water Treatment Installation at Universitas Sebelas Maret</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Solo, Central Java</div>
+                <div><strong>System:</strong> Media Filters (Sand Filter and Carbon Filter), Ultrafiltration, and Solar Panels</div>
+                <div><strong>Capacity:</strong> Media Filters (2.5 Liters per second), Ultrafiltration (2.5 Liters per second), Solar Panels (30 kW)</div>
+                <div><strong>Scope of Work:</strong> Water Treatment Installation, SCADA System, Piping Network, Water Fountain & Dispenser Installation, and Solar Panels</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 18 -->
+
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Water Treatment Installation at the Military Academy</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Military Academy of Magelang</div>
+                <div><strong>System:</strong> Media Filters (Sand Filter and Carbon Filter), Ultrafiltration, and Solar Panels</div>
+                <div><strong>Capacity:</strong> Media Filters (3 Liters per second), Ultrafiltration (2.5 Liters per second), Solar Panels (22 kW)</div>
+                <div><strong>Scope of Work:</strong> Civil Works for Operational Buildings, Water Treatment Installation, SCADA System, Piping Network, and Water Fountain & Dispenser Installation</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 19 -->
+
+    <div class="gallery-card waste">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide19" id="s19-1" checked>
+            <input type="radio" name="slide19" id="s19-2">
+            <input type="radio" name="slide19" id="s19-3">
+            <input type="radio" name="slide19" id="s19-4">
+
+            <!-- SLIDES -->
+            <div class="slides4">
+                <img src="images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.07.00.jpeg">
+                <img src="images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.56-1-460x460.jpeg">
+                <img src="images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.57-1-460x460.jpeg">
+                <img src="images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.58-460x460.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s19-1"></label>
+                <label for="s19-2"></label>
+                <label for="s19-3"></label>
+                <label for="s19-4"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Wastewater Treatment Installation for Presidential Palace Facilities</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Merdeka Palace, Jakarta and Cipanas Palace, West Java</div>
+                <div><strong>System:</strong> Conventional WTP, Solar Panel System, BWRO System, Ultrafiltration System</div>
+                <div><strong>Capacity:</strong> Conventional WTP (5 Liters per second), Ultrafiltration (9.5 Liters per second), BWRO (4.5 Liters per second), Solar Panels (20 kW)</div>
+                <div><strong>Scope of Work:</strong> Civil Works for Operational Buildings, Water Treatment Installation, SCADA System, Piping Network, Water Fountain & Dispenser Installation, and Solar Panels</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 20 -->
+    
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Project at PDAM Surya Sembada</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Surabaya, East Java</div>
+                <div><strong>Scope of Work:</strong> WTP Rehabilitation, Pipe & Pump Installation, and Panel & Instrumentation Installation</div>
+            </div>
+        </a>
+    </div>
+
+        <!-- ROW 3 -->
+
+    <!-- post 21 -->
+
+        <!-- PROJECT CARD -->
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Sea Water Reverse Osmosis System Optimization Project</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Nusa Lembongan, Bali</div>
+                <div><strong>System:</strong> SWRO System Optimization</div>
+                <div><strong>Capacity:</strong> 5 Liters per second</div>
+                <div><strong>Scope of Work</strong> Optimization of Production Units, SWRO System, Electrical System, and Distribution System</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 22 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide22" id="s22-1" checked>
+            <input type="radio" name="slide22" id="s22-2">
+            <input type="radio" name="slide22" id="s22-3">
+
+            <!-- SLIDES -->
+            <div class="slides3">
+                <img src="images/Project/Distribusi Air Bersih Mandalika/mandalika.jpeg">
+                <img src="images/Project/Distribusi Air Bersih Mandalika/182910906_496460828464945_4591256403227939957_n-300x300.jpg">
+                <img src="images/Project/Distribusi Air Bersih Mandalika/mandalika-300x300.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s22-1"></label>
+                <label for="s22-2"></label>
+                <label for="s22-3"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Water Treatment Installation at the Air Force Academy</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Mandalika, Indonesia</div>
+                <div><strong>System:</strong> ? </div>
+                <div><strong>Capacity: </strong> 50 Liters per second</div>
+                <div><strong>Scope of Work:</strong> Water Treatment Installation, Piping Network, and 2,800 m³ Reservoir</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- post 23 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+            <div class="slides3">
+                <img src="images/Project/Air Minum RSCM/RSCM.jpeg">
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">RSCM Drinking Water Distribution Project</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Cipto Mangunkusumo Hospital, Jakarta</div>
+                <div><strong>System:</strong> Nanofiltration System and Solar Panels</div>
+                <div><strong>Capacity:</strong> Nanofiltration (1 Liter per second) & Solar Panels (10 kW)</div>
+                <div><strong>Scope of Work:</strong> M&E, Piping Network, Nanofiltration System, and Solar Panels</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 24 -->
+    
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Clean Water Supply Project in Ponorogo</div>
+            <div class="gallery-desc">
+                <div><strong>Location:</strong> Ponorogo, Indonesia</div>
+                <div><strong>Scope of Work:</strong> Piping Network, Pump Installation, and Generator Set Installation</div>
+            </div>
+        </a>
+
+    </div>
+    </div>
+
+        <!-- PAGINATION -->
+    <div class="gallery-pagination">
+        <a href="project_eng.html">&lsaquo;</a>
+        <a href="project_eng.html">1</a>
+        <span class="active">2</span>
+        <a href="project-page3_eng.html">3</a>
+        <a href="project-page3_eng.html">&rsaquo;</a>
+    </div>
+
+</section>
+
+    <!-- Form -->
+
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <!-- LEFT -->
+            <div>
+                <h2>Free Consultation</h2>
+                <p>
+                    Tell us about your project needs.  
+                    Our team will contact you within 1×24 hours.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Fast response</li>
+                    <li><i class="fas fa-check"></i> Free consultation</li>
+                    <li><i class="fas fa-check"></i> Solutions tailored to your needs</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input
+                    type="text"
+                    name="nama_lengkap"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="nomor_telepon"
+                    placeholder="Phone Number"
+                >
+
+                <input
+                    type="text"
+                    name="subjek"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    name="pesan"
+                    placeholder="Tell us about your project needs"
+                    rows="4"
+                ></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Consultation Request - BSBK Website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">
+                    Send Consultation
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, West Java <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Bogor Regency</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index_eng.html">Home</a>
+                    <a href="TentangKami_eng.html">Tentang Kami</a>
+                    <a href="layanan_eng.html">Layanan</a>
+                    <a href="project_eng.html">Project</a>
+                    <a href="blog_eng.html">Blog</a>
+                    <a href="kontak_eng.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+        
+        <!-- WhatsApp -->
+        <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+        <script src="script.js"></script>
+</body>
+</html>

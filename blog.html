@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_blog.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Senin - Jumat (08.00 - 17.00)</span>
+            <a href="kontak.html" class="btn-blue"> Meminta Konsultasi Gratis</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Konstruksi</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇮🇩</span>
+                    <span id="current-lang-text">ID</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="blog.html">🇮🇩 Indonesian</a>
+                    <a href="blog_eng.html">🇺🇸 English</a>
+                </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <button class="btn-blue w-full">Meminta Konsultasi Gratis</button>
+        </div>
+    </nav>
+
+
+        <!-- Blog Hero -->
+<section class="blog-hero">
+    <div class="container text-center">
+        <span class="blog-label">INSIGHT & ARTICLE</span>
+        <h1>Insights & Industry Updates</h1>
+        <p>
+            Artikel, wawasan, dan pembaruan seputar konstruksi, infrastruktur,
+            serta praktik terbaik dalam industri.
+        </p>
+    </div>
+</section>
+
+        <!-- Featured-blog -->
+<section class="featured-blog">
+    <div class="container">
+        <div class="featured-card">
+            <img src="images/blog-featured.jpg" alt="Featured Blog">
+
+            <div class="featured-content">
+                <span class="blog-category">Konstruksi</span>
+                <h2>
+                    Tren Konstruksi 2025: Efisiensi, Teknologi, dan Keberlanjutan
+                </h2>
+                <p>
+                    Industri konstruksi terus berkembang dengan adopsi teknologi
+                    modern, metode kerja efisien, dan fokus terhadap keberlanjutan.
+                </p>
+                <a href="blog-detail.html" class="blog-btn">
+                    Baca Selengkapnya →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Blog List -->
+
+<section class="blog-list">
+    <div class="container">
+        <div class="blog-grid">
+
+            <!-- Blog 1 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 2-->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+             <!-- Blog 3 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 3 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+            
+            <!-- Blog 4 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 5 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 6 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 7 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 8 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 9 -->
+            <article class="blog-card">
+                <img src="images/blog1.jpg" alt="">
+                <div class="blog-card-content">
+                    <span>Konstruksi</span>
+                    <h3>Manajemen Proyek yang Efektif dalam Konstruksi</h3>
+                    <p>
+                        Strategi pengelolaan proyek untuk memastikan kualitas,
+                        waktu, dan biaya tetap terkendali.
+                    </p>
+                    <a href="blog-detail.html">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div class="container text-center">
+    <div class="pagination">
+        <a href="#">‹</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">›</a>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Kabupaten Bogor</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="TentangKami.html">Tentang Kami</a>
+                    <a href="layanan.html">Layanan</a>
+                    <a href="project.html">Project</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+        
+        <!-- WhatsApp -->
+        <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+        <script src="script.js"></script>
+</body>
+</html>

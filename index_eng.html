@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <link rel="stylesheet" href="css/style_main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Monday – Friday (08:00 – 17:00)</span>
+            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="BSBK Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Construction</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Contact <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇺🇸</span>
+                    <span id="current-lang-text">EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="index.html">🇮🇩 Indonesian</a>
+                    <a href="index_eng.html">🇺🇸 English</a>
+                </div>
+            </div>
+
+            <!-- Contact Icons -->
+            <a href="https://api.whatsapp.com/send/?phone=6282114254958" target="_blank" class="round-yellow">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?to=info@bsbkonstruksi.co.id" class="round-yellow">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                </div>
+            </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇺🇸</span>
+            </div>
+
+            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="css-slider">
+            <input type="radio" name="s" id="s1" checked>
+            <input type="radio" name="s" id="s2">
+            <input type="radio" name="s" id="s3">
+
+            <div class="slides">
+                <div class="slide"><img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="Slide 1"></div>
+                <div class="slide"><img src="images/SKID NF 3.jpeg" alt="Slide 2"></div>
+                <div class="slide"><img src="images/WhatsApp Image 2023-05-19 at 14.06.56.jpeg" alt="Slide 3"></div>
+            </div>
+
+            <div class="nav-dots">
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+            </div>
+            <div class="nav-arrows">
+                <!-- Slide 1 -->
+                <label for="s3" class="prev s1">&#10094;</label>
+                <label for="s2" class="next s1">&#10095;</label>
+
+                <!-- Slide 2 -->
+                <label for="s1" class="prev s2">&#10094;</label>
+                <label for="s3" class="next s2">&#10095;</label>
+
+                <!-- Slide 3 -->
+                <label for="s2" class="prev s3">&#10094;</label>
+                <label for="s1" class="next s3">&#10095;</label>
+                </div>
+
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content container">
+            <div class="logo-inline">
+                <img src="images/BSBK LOGO Cut Transparent.png" alt="BSBK Logo" class="logo-icon2">
+                <span>BSB Construction</span>
+            </div>
+
+            <p class="hero-sub">Water Specialist</p>
+            <h1 class="hero-title">Complete solutions for water and wastewater treatment</h1>
+            <p class="hero-desc">
+                Safe, Reliable, and Cost-Effective. We provide the best contractor services.
+            </p>
+            <a href="TentangKami.html" class="btn-yellow">Learn More</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section">
+        <div class="container text-center mb-40">
+            <h2>Our Story</h2>
+            <p>Our journey in delivering the best water treatment solutions.</p>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <p>
+                    The journey of PT Bayu Surya Bakti Construction began with a creative vision from our founder,
+                    Mr. Ir. I Nyoman Yasanegara, who has been involved in the water treatment sector for nearly
+                    20 years. Witnessing the increasing issues of water scarcity and pollution in Indonesia,
+                    he was inspired to establish a company that contributes positively to sustainable water
+                    management in Indonesia.
+                </p>
+            </div>
+
+            <div class="placeholder-img">
+                <img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section bg-light">
+        <div class="container text-center mb-40">
+            <h2>Why Choose Us?</h2>
+            <p>Advantages that set us apart from others.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <h3>Reliability & Expertise</h3>
+                <p>Supported by an experienced team with proven technical skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>Quality Assurance</h3>
+                <p>Every project is delivered with the highest quality standards.</p>
+            </div>
+
+            <div class="card">
+                <h3>Business Ethics</h3>
+                <p>We are committed to transparency and responsibility in every step.</p>
+            </div>
+
+            <div class="card">
+                <h3>Trusted Partner</h3>
+                <p>Trusted by partners through a consistent and proven track record.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <div>
+                <h2>Free Consultation</h2>
+                <p>
+                    Tell us about your project needs.  
+                    Our team will contact you within 24 hours.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Fast response</li>
+                    <li><i class="fas fa-check"></i> Free consultation</li>
+                    <li><i class="fas fa-check"></i> Tailored solutions</li>
+                </ul>
+            </div>
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Tell us about your project needs" rows="4"></textarea>
+
+                <input type="hidden" name="_subject" value="Consultation Request - BSBK Website">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">Send Consultation</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong KM 16, Limus Nunggal,<br>Cileungsi, Bogor, West Java 16820</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 – 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">Tentang Kami</a>
+                <a href="layanan_eng.html">Layanan</a>
+                <a href="project_eng.html">Project</a>
+                <a href="blog_eng.html">Blog</a>
+                <a href="kontak_eng.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 Bayu Surya Bakti Construction</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

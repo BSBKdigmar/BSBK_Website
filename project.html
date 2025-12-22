@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_project.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Senin - Jumat (08.00 - 17.00)</span>
+            <a href="kontak.html" class="btn-blue"> Meminta Konsultasi Gratis</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Konstruksi</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇮🇩</span>
+                    <span id="current-lang-text">ID</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="project.html">🇮🇩 Indonesia</a>
+                    <a href="project_eng.html">🇺🇸 English</a>
+                </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <button class="btn-blue w-full">Request Project Quote</button>
+        </div>
+    </nav>
+
+    <!-- PROJECT GALLERY -->
+<section class="project-gallery container">
+
+    <!-- FILTER RADIOS (must be direct children)  stop stop stop -->
+    <input type="radio" name="filter" id="filter-all" checked hidden>
+    <input type="radio" name="filter" id="filter-energi" hidden>
+    <input type="radio" name="filter" id="filter-air" hidden>
+    <input type="radio" name="filter" id="filter-limbah" hidden>
+
+    <div class="gallery-tabs">
+        <label for="filter-all">All</label>
+        <label for="filter-energi">Energi Terbarukan</label>
+        <label for="filter-air">Instalasi Pengolahan Air</label>
+        <label for="filter-limbah">Pengolahan Air Limbah</label>
+    </div>
+
+    <!-- post 1 -->
+
+    <!-- GRID -->
+    <div class="gallery-grid">
+
+        <!-- PROJECT CARD -->
+        <div class="gallery-card energy">
+
+             <!-- SLIDER -->
+            <div class="gallery-slider">
+
+                <!-- RADIO CONTROLS -->
+                <input type="radio" name="slide1" id="s1-1" checked>
+                <input type="radio" name="slide1" id="s1-2">
+                <input type="radio" name="slide1" id="s1-3">
+                <input type="radio" name="slide1" id="s1-4">
+
+                <!-- SLIDES -->
+                <div class="slides4">
+                    <img src="images/Project/Pembangkit Tenaga Surya/Solar-Panel-Tanake.png">
+                    <img src="images/Project/Pembangkit Tenaga Surya/Maratua-1-150x150.png">
+                    <img src="images/Project/Pembangkit Tenaga Surya/Maratua-2-150x150.png">
+                    <img src="images/Project/Pembangkit Tenaga Surya/Maratua-3-150x150.png">
+                </div>
+
+                <!-- DOTS -->
+                <div class="slider-dots">
+                    <label for="s1-1"></label>
+                    <label for="s1-2"></label>
+                    <label for="s1-3"></label>
+                    <label for="s1-4"></label>
+                </div>
+            </div>
+
+
+    <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Pembangkit Tenaga Surya – Maratua</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Kabupaten Takalar, Bunaken, dan Kepulauan Maratua</div>
+                <div><strong>Sistem:</strong> Panel Surya</div>
+                <div><strong>Kapasitas:</strong> 174 kW</div>
+                <div><strong>Lingkup:</strong> Panel Surya & Elektrikal</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 2 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide2" id="s2-1" checked>
+            <input type="radio" name="slide2" id="s2-2">
+            <input type="radio" name="slide2" id="s2-3">
+            <input type="radio" name="slide2" id="s2-4">
+
+            <!-- SLIDES -->
+            <div class="slides4">
+                <img src="images/Project/Instalasi Reservoir/WhatsApp-Image-2022-12-13-at-10.52.16-1-768x432.jpeg">
+                <img src="images/Project/Instalasi Reservoir/tanjung-samak.-2-1-150x150.jpeg">
+                <img src="images/Project/Instalasi Reservoir/tanjung-samak.-3-1-150x150.jpeg">
+                <img src="images/Project/Instalasi Reservoir/tanjung-samak.-4-1-150x150.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s2-1"></label>
+                <label for="s2-2"></label>
+                <label for="s2-3"></label>
+                <label for="s2-4"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Reservoir - Meranti</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Tanjung Samak, Kepulauan Meranti</div>
+                <div><strong>Kapasitas:</strong> 200 M3</div>
+                <div><strong>Metode Pemasangan:</strong> Bolted</div>
+                <div><strong>Brand:</strong> Tangki Nero Fusion Bonded Epoxy, Karya Anak Bangsa (TKDN)</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 3 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide3" id="s3-1" checked>
+            <input type="radio" name="slide3" id="s3-2">
+            <input type="radio" name="slide3" id="s3-3">
+
+            <!-- SLIDES -->
+            <div class="slides3">
+                <img src="images/Project/Instalasi Reservoir Riau/Tanki-Nero-Medang-Kampai-947x710.jpeg">
+                <img src="images/Project/Instalasi Reservoir Riau/Tanki-Nero-Medang-Kampai1-150x150.jpeg">
+                <img src="images/Project/Instalasi Reservoir Riau/TANKI-NERO-MEDANGKAMPAI-150x150.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s3-1"></label>
+                <label for="s3-2"></label>
+                <label for="s3-3"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Reservoir - Kepulauan Riau</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Medang Kampai, Kepulauan Riau</div>
+                <div><strong>Kapasitas:</strong> 1000 M3</div>
+                <div><strong>Metode Pemasangan:</strong> Bolted</div>
+                <div><strong>Brand:</strong> Tangki Nero Fusion Bonded Epoxy, Karya Anak Bangsa (TKDN)</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 4 -->
+    
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Reservoir - Nusa Tenggara Barat</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Senaru, Nusa Tenggara Barat</div>
+                <div><strong>Kapasitas:</strong> 700 M3</div>
+                <div><strong>Metode Pemasangan:</strong> Bolted</div>
+                <div><strong>Brand:</strong> Nero Fusion Bonded Epoxy Tank, Karya Anak Bangsa (TKDN)</div>
+            </div>
+        </a>
+
+    </div>
+
+
+
+ <!-- post 5 -->
+
+<!-- PROJECT CARD -->
+<div class="gallery-card water">
+
+    <!-- SLIDER -->
+    <div class="gallery-slider">
+
+        <!-- RADIO CONTROLS -->
+        <input type="radio" name="slide5" id="s5-1" checked>
+        <input type="radio" name="slide5" id="s5-2">
+        <input type="radio" name="slide5" id="s5-3">
+        <input type="radio" name="slide5" id="s5-4">
+
+        <!-- SLIDES -->
+        <div class="slides4">
+            <img src="images/Project/Project Canggu BWRO/bwro-9-768x575.jpeg">
+            <img src="images/Project/Project Canggu BWRO/dosing-150x150.jpeg">
+            <img src="images/Project/Project Canggu BWRO/pompa-bwro-150x150.jpeg">
+            <img src="images/Project/Project Canggu BWRO/pretreatment-bwro-150x150.jpeg">
+        </div>
+
+        <!-- DOTS -->
+        <div class="slider-dots">
+            <label for="s5-1"></label>
+            <label for="s5-2"></label>
+            <label for="s5-3"></label>
+            <label for="s5-4"></label>
+        </div>
+    </div>
+
+    <!-- TEXT -->
+    <a href="project-detail.html" class="gallery-text">
+        <div class="gallery-title">PROJECT CANGGU BWRO</div>
+        <div class="gallery-desc">
+            <div><strong>Location:</strong> Canggu, Bali</div>
+            <div><strong>System:</strong> Brackish Water Reverse Osmosis (BWRO)</div>
+            <div><strong>Capacity:</strong> 1 × 25 m³ per day</div>
+            <div><strong>Scope:</strong> Procurement & installation of BWRO system, pump installation, and M&E</div> 
+        </div>
+    </a>
+
+</div>
+
+<!-- post 6 -->
+
+<div class="gallery-card waste">
+
+    <div class="gallery-slider">
+
+        <!-- RADIO CONTROLS -->
+        <input type="radio" name="slide6" id="s6-1" checked>
+        <input type="radio" name="slide6" id="s6-2">
+        <input type="radio" name="slide6" id="s6-3">
+
+        <!-- SLIDES -->
+        <div class="slides3">
+            <img src="images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.08.39-250x236.png">
+            <img src="images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.08.57.png">
+            <img src="images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.09.05-250x183.png">
+        </div>
+
+        <!-- DOTS -->
+        <div class="slider-dots">
+            <label for="s6-1"></label>
+            <label for="s6-2"></label>
+            <label for="s6-3"></label>
+        </div>
+    </div>
+
+    <!-- TEXT -->
+    <a href="project-detail.html" class="gallery-text">
+        <div class="gallery-title">Wastewater Treatment Installation at PT Solusi Bangun Indonesia</div>
+        <div class="gallery-desc">
+            <div><strong>Location:</strong> Narogong, West Java</div>
+            <div><strong>System:</strong> Conventional Activated Sludge</div>
+            <div><strong>Scope:</strong> Wastewater treatment installation for open coal storage, design engineering, panel & instrumentation installation, and shelter construction</div>
+        </div>
+    </a>
+
+</div>
+
+<!-- post 7 -->
+
+<div class="gallery-card waste">
+
+    <div class="gallery-slider">
+
+        <!-- RADIO CONTROLS -->
+        <input type="radio" name="slide7" id="s7-1" checked>
+        <input type="radio" name="slide7" id="s7-2">
+        <input type="radio" name="slide7" id="s7-3">
+        <input type="radio" name="slide7" id="s7-4">
+        <input type="radio" name="slide7" id="s7-5">
+
+        <!-- SLIDES -->
+        <div class="slides5">
+            <img src="images/Project/Limbah Bali/aerator-1-150x150.jpeg">
+            <img src="images/Project/Limbah Bali/azud-filter-150x150.jpeg">
+            <img src="images/Project/Limbah Bali/clarfier-947x710.jpeg">
+            <img src="images/Project/Limbah Bali/dosing-1-150x150.jpeg">
+            <img src="images/Project/Limbah Bali/pompa-distribusi-150x150.jpeg">
+        </div>
+
+        <!-- DOTS -->
+        <div class="slider-dots">
+            <label for="s7-1"></label>
+            <label for="s7-2"></label>
+            <label for="s7-3"></label>
+            <label for="s7-4"></label>
+            <label for="s7-5"></label>
+        </div>
+    </div>
+
+    <!-- TEXT -->
+    <a href="project-detail.html" class="gallery-text">
+        <div class="gallery-title">Bali Wastewater Treatment Installation</div>
+        <div class="gallery-desc">
+            <div><strong>Location:</strong> Sanur, Bali</div>
+            <div><strong>System:</strong> Moving Bed Biofilm Reactor (MBBR)</div>
+            <div><strong>Capacity:</strong> 1,500 m³ per day</div>
+            <div><strong>Scope of Work:</strong> WWTP system, polishing water system, piping, and M&E</div>
+        </div>
+    </a>
+
+</div>
+
+<!-- post 8 -->
+
+<div class="gallery-card waste">
+
+    <!-- IMAGE PLACEHOLDER -->
+    <div class="gallery-image coming-soon">
+        <span>Project Image<br>Coming Soon</span>
+    </div>
+
+    <!-- TEXT -->
+    <a href="project-detail.html" class="gallery-text">
+        <div class="gallery-title">Wastewater Treatment Installation at PT Indoglas Jaya</div>
+        <div class="gallery-desc">
+            <div><strong>Location:</strong> Narogong, West Java</div>
+            <div><strong>System:</strong> ?</div>
+            <div><strong>Scope of Work:</strong> Wastewater treatment installation, design engineering, panel & instrumentation installation, and reservoir</div>
+        </div>
+    </a>
+
+</div>
+
+        <!-- ROW 3 -->
+
+    <!-- post 9 -->
+
+        <!-- PROJECT CARD -->
+        <div class="gallery-card water">
+
+             <!-- SLIDER -->
+            <div class="gallery-slider">
+
+                <!-- RADIO CONTROLS -->
+                <input type="radio" name="slide9" id="s9-1" checked>
+                <input type="radio" name="slide9" id="s9-2">
+                <input type="radio" name="slide9" id="s9-3">
+                <input type="radio" name="slide9" id="s9-4">
+                <input type="radio" name="slide9" id="s9-5">
+
+                <!-- SLIDES -->
+                <div class="slides5">
+                    <img src="images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.50-PM-768x768.jpeg">
+                    <img src="images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.53-PM-1-150x150.jpeg">
+                    <img src="images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.53-PM-150x150.jpeg">
+                    <img src="images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.54-PM-150x150.jpeg">
+                    <img src="images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.56-PM-150x150.jpeg">
+                </div>
+
+                <!-- DOTS -->
+                <div class="slider-dots">
+                    <label for="s9-1"></label>
+                    <label for="s9-2"></label>
+                    <label for="s9-3"></label>
+                    <label for="s9-4"></label>
+                    <label for="s9-5"></label>
+                </div>
+            </div>
+
+
+    <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Pengolahan Air Bali</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Sanur, Bali</div>
+                <div><strong>Sistem:</strong> Brackish Water Reverse Osmosis (BWRO)</div>
+                <div><strong>Kapasitas:</strong> 300 M3 per hari</div>
+                <div><strong>Lingkup:</strong> BWRO Sistem, perpipaan dan M&E</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 10 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide10" id="s10-1" checked>
+            <input type="radio" name="slide10" id="s10-2">
+            <input type="radio" name="slide10" id="s10-3">
+            <input type="radio" name="slide10" id="s10-4">
+
+            <!-- SLIDES -->
+            <div class="slides4">
+                <img src="images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.59-768x373.jpeg">
+                <img src="images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.54-150x150.jpeg">
+                <img src="images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.58-1-150x150.jpeg">
+                <img src="images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2021-08-25-at-09.20.13-150x150.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s10-1"></label>
+                <label for="s10-2"></label>
+                <label for="s10-3"></label>
+                <label for="s10-4"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Pengolahan Air di Akademi Angkatan Udara</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Akademi Angkatan Udara, Yogyakarta</div>
+                <div><strong>Sistem:</strong> Media Filter (Sand Filter dan Carbon Filter), Ultrafiltrasi, dan Panel Surya</div>
+                <div><strong>Kapasitas: </strong> Media Filter (6 Liter per detik), Ultrafiltrasi (5 Liter per detik), Panel Surya (46 kW)</div>
+                <div><strong>Lingkup Pekerjaan:</strong> Pekerjaan Sipil Bangunan Operasional, Instalasi Pengolahan Air, Sistem Scada, Jaringan Perpipaan, dan Instalasi Water Fountain & Dispenser</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 11 -->
+
+    <div class="gallery-card water">
+
+        <div class="gallery-slider">
+
+            <!-- RADIO CONTROLS -->
+            <input type="radio" name="slide11" id="s11-1" checked>
+            <input type="radio" name="slide11" id="s11-2">
+            <input type="radio" name="slide11" id="s11-3">
+            <input type="radio" name="slide11" id="s11-4">
+
+            <!-- SLIDES -->
+            <div class="slides4">
+                <img src="images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25.jpeg">
+                <img src="images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-1-460x460.jpeg">
+                <img src="images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-2-460x460.jpeg">
+                <img src="images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-4-460x460.jpeg">
+            </div>
+
+            <!-- DOTS -->
+            <div class="slider-dots">
+                <label for="s11-1"></label>
+                <label for="s11-2"></label>
+                <label for="s11-3"></label>
+                <label for="s11-4"></label>
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Pengolahan Air Ternate</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Ternate, Indonesia</div>
+                <div><strong>Sistem:</strong> Ultrafiltrasi</div>
+                <div><strong>Kapasitas:</strong> 100 Liter per detik</div>
+                <div><strong>Lingkup Pekerjaan:</strong> Pekerjaan Sipil Bangunan Operasional, Instalasi Pengolahan Air, dan Sistem SCADA</div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- post 12 -->
+    
+    <div class="gallery-card water">
+
+        <!-- IMAGE PLACEHOLDER -->
+        <div class="gallery-image coming-soon">
+            <span>Project Image<br>Coming Soon</span>
+        </div>
+
+        <!-- TEXT -->
+        <a href="project-detail.html" class="gallery-text">
+            <div class="gallery-title">Instalasi Pengolahan Air Conventional di Universitas Andalas</div>
+            <div class="gallery-desc">
+                <div><strong>Lokasi:</strong> Sumatera Barat, Indonesia</div>
+                <div><strong>Sistem:</strong> Conventional WTP, Media FIlter (Sand Filter dan Carbon Filter), dan Ultrafiltrasi</div>
+                <div><strong>Metode Pemasangan:</strong> Conventional WTP (40 Liter per detik), Media Filter (3 Liter per detik), Ultrafiltrasi (2,5 Liter per detik)</div>
+                <div><strong>Lingkup Pekerjaan:</strong> Pekerjaan Sipil Bangunan Operasional, Instalasi Pengolahan Air, Sistem Scada, Jaringan Perpipaan, dan Instalasi Water Fountain & Dispenser</div>
+            </div>
+        </a>
+
+    </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="gallery-pagination">
+        <span class="active">1</span>
+        <a href="project-page2.html">2</a>
+        <a href="project-page3.html">3</a>
+        <a href="project-page2.html">&rsaquo;</a>
+    </div>
+
+</section>
+
+    <!-- Form -->
+
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <!-- LEFT -->
+            <div>
+                <h2>Konsultasi Gratis</h2>
+                <p>
+                    Ceritakan kebutuhan proyek Anda.  
+                    Tim kami akan menghubungi Anda dalam 1×24 jam.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Respon cepat</li>
+                    <li><i class="fas fa-check"></i> Konsultasi tanpa biaya</li>
+                    <li><i class="fas fa-check"></i> Solusi sesuai kebutuhan</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input
+                    type="text"
+                    name="nama_lengkap"
+                    placeholder="Nama Lengkap"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="nomor_telepon"
+                    placeholder="Nomor Telepon"
+                >
+
+                <input
+                    type="text"
+                    name="subjek"
+                    placeholder="Subjek"
+                >
+
+                <textarea
+                    name="pesan"
+                    placeholder="Ceritakan kebutuhan proyek Anda"
+                    rows="4"
+                ></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Permintaan Konsultasi - Website BSBK">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">
+                    Kirim Konsultasi
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Kabupaten Bogor</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="TentangKami.html">Tentang Kami</a>
+                    <a href="layanan.html">Layanan</a>
+                    <a href="project.html">Project</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+        
+        <!-- WhatsApp -->
+        <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+        <script src="script.js"></script>
+</body>
+</html>

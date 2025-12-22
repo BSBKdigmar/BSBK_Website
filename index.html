@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Senin - Jumat (08.00 - 17.00)</span>
+            <a href="kontak.html" class="btn-blue"> Meminta Konsultasi Gratis</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Konstruksi</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇮🇩</span>
+                    <span id="current-lang-text">ID</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="index.html">🇮🇩 Indonesian</a>
+                    <a href="index_eng.html">🇺🇸 English</a>
+                </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="index.html">Beranda</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Kontak <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="career.html">Karier</a>
+                    </div>
+                </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <a href="kontak.html" class="btn-blue"> Meminta Konsultasi Gratis</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="css-slider">
+            <input type="radio" name="s" id="s1" checked>
+            <input type="radio" name="s" id="s2">
+            <input type="radio" name="s" id="s3">
+
+            <div class="slides">
+                <div class="slide"><img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="Slide 1"></div>
+                <div class="slide"><img src="images/SKID NF 3.jpeg" alt="Slide 2"></div>
+                <div class="slide"><img src="images/WhatsApp Image 2023-05-19 at 14.06.56.jpeg" alt="Slide 3"></div>
+            </div>
+
+            <div class="nav-dots">
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+            </div>
+
+            <div class="nav-arrows">
+                <!-- arrows for slide 1 -->
+                <label class="prev s1" for="s3">&#10094;</label>
+                <label class="next s1" for="s2">&#10095;</label>
+
+                <!-- arrows for slide 2 -->
+                <label class="prev s2" for="s1">&#10094;</label>
+                <label class="next s2" for="s3">&#10095;</label>
+
+                <!-- arrows for slide 3 -->
+                <label class="prev s3" for="s2">&#10094;</label>
+                <label class="next s3" for="s1">&#10095;</label>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content container">
+            <div class="logo-inline">
+                <img src="images/BSBK LOGO Cut Transparent.png" alt="DS Logo" class="logo-icon2">
+                <span>BSB Konstruksi</span>
+            </div>
+
+            <p class="hero-sub">Water Specialist</p>
+            <h1 class="hero-title">Solusi lengkap untuk pengolahan air dan air limbah Anda</h1>
+            <p class="hero-desc">Aman, Handal, dan Hemat Biaya. Kami menawarkan Layanan Kontraktor Terbaik.</p>
+            <a href="TentangKami.html" class="btn-yellow">Pelajari Selengkapnya</button></a>
+        </div>
+
+        <!-- Arrows -->
+        <button id="prev-slide" class="carousel-arrow left"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-slide" class="carousel-arrow right"><i class="fas fa-chevron-right"></i></button>
+
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section">
+        <div class="container text-center mb-40">
+            <h2>Cerita Tentang Kami</h2>
+            <p>Perjalanan kami dalam menyediakan solusi terbaik untuk pengolahan air.</p>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <p>Petualangan PT Bayu Surya Bakti Konstruksi dimulai dengan ide kreatif dari pendiri kami, Bapak Ir. I Nyoman Yasanegara, yang telah berkecimpung di sektor pengolahan air selama hampir 20 tahun. Melihat isu-isu kelangkaan dan polusi air yang semakin meningkat di Indonesia, beliau terinspirasi untuk mendirikan sebuah perusahaan yang dapat memberikan kontribusi positif dalam lingkup pengelolaan air di Indonesia.</p>
+                <p></p>
+            </div>
+
+            <div class="placeholder-img">
+                <img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section bg-light">
+        <div class="container text-center mb-40">
+            <h2>Kenapa Pilih Kami?</h2>
+            <p>Keunggulan yang membedakan kami dari yang lain.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-book-bookmark card-icon"></i> 
+                <h3>Keandalan dan Kualitas</h3>
+                <p>Didukung tim berpengalaman dengan keahlian teknis yang terbukti.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-handshake card-icon"></i>
+                <h3>Keandalan dan Kualitas</h3>
+                <p>Setiap proyek dikerjakan dengan standar kualitas tertinggi.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-seedling card-icon"></i>
+                <h3>Etika Bisnis</h3>
+                <p>Kami berkomitmen pada transparansi dan tanggung jawab dalam setiap langkah.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-children card-icon"></i> 
+                <h3>Terpercaya</h3>
+                <p>Dipercaya oleh berbagai mitra melalui rekam jejak kerja yang konsisten.</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- VISI & MISI SECTION -->
+<section class="section">
+    <div class="container text-center mb-40">
+        <h2>Visi dan Misi Kami</h2>
+        <p>Arah dan tujuan yang memandu setiap langkah kami.</p>
+    </div>
+
+    <div class="grid-2">
+        
+        <!-- VISI -->
+        <div class="card">
+            <i class="fas fa-eye card-icon"></i>
+            <h3 class="mb-4">Visi Kami</h3>
+            <p>
+                Visi kami adalah menjadi salah satu perusahaan terdepan dalam bidang pengolahan air bersih dan air minum yang menyediakan pasokan air bersih yang berkelanjutan dan berkontribusi pada teknologi lingkungan yang ramah lingkungan dengan jaminan kualitas, profesionalisme, dan kepuasan pelanggan.
+            </p>
+        </div>
+
+        <!-- MISI -->
+        <div class="card">
+            <i class="fas fa-bullseye card-icon"></i>
+            <h3 class="mb-4">Misi Kami</h3>
+            <p>
+                Misi kami adalah menyediakan produk dan layanan yang berfokus pada kepuasan pelanggan dalam menyediakan pengolahan air yang dibutuhkan berdasarkan peraturan kesehatan, keselamatan dan lingkungan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS SECTION -->
+<section class="section bg-light">
+    <div class="container text-center mb-40">
+        <h2>Sertifikat & Penghargaan</h2>
+        <p>Pengakuan atas dedikasi dan standar kualitas kami.</p>
+    </div>
+
+    <div class="grid-4 cert-grid">
+
+        <div class="card cert-card">
+            <i class="fas fa-certificate cert-icon green"></i>
+            <h3 class="mb-2">ISO 9001:2015</h3>
+            <p>Sertifikasi Manajemen Mutu</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-trophy cert-icon yellow"></i>
+            <h3 class="mb-2">ISO 37001:2016</h3>
+            <p>Sertifikasi sistem manajemen anti suap</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-leaf cert-icon teal"></i>
+            <h3 class="mb-2">ISO 14001:2015</h3>
+            <p>Sertifikasi manajemen Teknologi Hijau</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hard-hat fa-2x"></i>
+            <h3 class="mb-2">ISO 45001:2018</h3>
+            <p>Sertifikasi kesehatan dan keselamatan kerja</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hands-helping cert-icon blue"></i>
+            <h3 class="mb-2">Penghargaan Asean Games 2018</h3>
+            <p>Penghargaan dukungan dan dedikasi penyedia sarana dan prasarana Asean Games 2018</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hands-helping cert-icon blue"></i>
+            <h3 class="mb-2">Dumai Water Project of the year 2023</h3>
+            <p>Penghargaan Proyek dumai pada 2023</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CLIENT CAROUSEL -->
+<section class="section">
+    <h2 class="text-center">Klien Kami</h2>
+
+    <!-- radio buttons for 4 slides -->
+    <input type="radio" name="client-slide" id="slide1" checked>
+    <input type="radio" name="client-slide" id="slide2">
+    <input type="radio" name="client-slide" id="slide3">
+    <input type="radio" name="client-slide" id="slide4">
+
+    <div class="client-carousel-wrapper">
+
+        <!-- left arrows -->
+        <label for="slide4" class="arrow left arrow1">&#10094;</label>
+        <label for="slide1" class="arrow left arrow2">&#10094;</label>
+        <label for="slide2" class="arrow left arrow3">&#10094;</label>
+        <label for="slide3" class="arrow left arrow4">&#10094;</label>
+
+        <!-- right arrows -->
+        <label for="slide2" class="arrow right arrow1">&#10095;</label>
+        <label for="slide3" class="arrow right arrow2">&#10095;</label>
+        <label for="slide4" class="arrow right arrow3">&#10095;</label>
+        <label for="slide1" class="arrow right arrow4">&#10095;</label>
+
+        <div class="client-carousel">
+            <!-- Slide 1 -->
+            <div class="slide s1">
+                <div class="client-item"><img src="images/Client/1.png"></div>
+                <div class="client-item"><img src="images/Client/2.png"></div>
+                <div class="client-item"><img src="images/Client/3.jpeg"></div>
+                <div class="client-item"><img src="images/Client/4.png"></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide s2">
+                <div class="client-item"><img src="images/Client/5.png"></div>
+                <div class="client-item"><img src="images/Client/6.png"></div>
+                <div class="client-item"><img src="images/Client/7.png"></div>
+                <div class="client-item"><img src="images/Client/8.png"></div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide s3">
+                <div class="client-item"><img src="images/Client/9.png"></div>
+                <div class="client-item"><img src="images/Client/10.png"></div>
+                <div class="client-item"><img src="images/Client/11.png"></div>
+                <div class="client-item"><img src="images/Client/12.png"></div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide s4">
+                <div class="client-item"><img src="images/Client/13.jpg"></div>
+                <div class="client-item"><img src="images/Client/14.jpg"></div>
+                <div class="client-item"><img src="images/Client/15.png"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Form -->
+
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <!-- LEFT -->
+            <div>
+                <h2>Konsultasi Gratis</h2>
+                <p>
+                    Ceritakan kebutuhan proyek Anda.  
+                    Tim kami akan menghubungi Anda dalam 1×24 jam.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Respon cepat</li>
+                    <li><i class="fas fa-check"></i> Konsultasi tanpa biaya</li>
+                    <li><i class="fas fa-check"></i> Solusi sesuai kebutuhan</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input
+                    type="text"
+                    name="nama_lengkap"
+                    placeholder="Nama Lengkap"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="nomor_telepon"
+                    placeholder="Nomor Telepon"
+                >
+
+                <input
+                    type="text"
+                    name="subjek"
+                    placeholder="Subjek"
+                >
+
+                <textarea
+                    name="pesan"
+                    placeholder="Ceritakan kebutuhan proyek Anda"
+                    rows="4"
+                ></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Permintaan Konsultasi - Website BSBK">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">
+                    Kirim Konsultasi
+                </button>
+            </form>
+
+        </div>
+    </section>  
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Kabupaten Bogor</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                    <a href="index.html">Beranda</a>
+                    <a href="TentangKami.html">Tentang Kami</a>
+                    <a href="layanan.html">Layanan</a>
+                    <a href="project.html">Project</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="kontak.html">Kontak</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

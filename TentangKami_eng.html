@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage Clone</title>
+
+    <!-- Replace Tailwind with Your Own Stylesheet -->
+    <link rel="stylesheet" href="css/style_TentangKami.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container flex-end contact-items">
+            <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
+            <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
+            <span><i class="fas fa-clock"></i> Monday - Friday (08:00 - 17:00)</span>
+            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Construction</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">About Us</a>
+                <a href="layanan_eng.html">Services</a>
+                <a href="project_eng.html">Projects</a>
+                <a href="blog_eng.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Contact <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="kontak_eng.html">Contact Us</a>
+                        <a href="career_eng.html">Careers</a>
+                    </div>
+                </div>
+
+                <!-- Lang Selector -->
+                <div class="lang-selector">
+                <button id="lang-btn">
+                    <span id="current-flag">🇺🇸</span>
+                    <span id="current-lang-text">EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="lang-menu">
+                    <a href="TentangKami.html">🇮🇩 Indonesia</a>
+                    <a href="TentangKami_eng.html">🇺🇸 English</a>
+                </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Careers</a>
+                </div>
+            </div>
+
+            <div class="mobile-lang">
+                <span>Language:</span> <span>🇮🇩</span>
+            </div>
+
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
+
+            <button class="btn-blue w-full">Request Project Quote</button>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-header-section">
+        <h1 class="about-title">About Us – PT Bayu Surya Bakti Construction</h1>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/Profile.jpeg" alt="Meeting Image">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    <strong>PT Bayu Surya Bakti Construction (BSBK)</strong> is a construction company specializing in water and wastewater treatment projects.
+                    Since its establishment, we have been committed to providing innovative and sustainable solutions to water management challenges, contributing to environmental preservation and community well-being.
+                </p>
+
+                <p>
+                    For more detailed information about PT BSBK, you may download our Company Profile file below.
+                </p>
+
+                <a href="#" class="download-file">Download Company Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION SECTION -->
+    <section class="visi-misi-section">
+        <div class="visi-misi-container">
+
+            <div class="visi-misi-box">
+                <div class="icon-circle">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <h3>Vision</h3>
+                <p>
+                    Our vision is to become a leading company in water treatment (clean water and wastewater) and other water-related infrastructure, providing water-focused solutions based on sustainable development...
+                </p>
+            </div>
+
+            <div class="visi-misi-box">
+                <div class="icon-circle">
+                    <i class="fas fa-gear"></i>
+                </div>
+
+                <h3>Mission</h3>
+                <ul>
+                    <li>Provide high-quality products and services to ensure customer satisfaction.</li>
+                    <li>Encourage environmentally friendly practices in every operation.</li>
+                    <li>Invest in research and development.</li>
+                    <li>Make a positive contribution to local communities.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TAB BUTTON SECTION -->
+    <div class="tabs-section container" style="margin-top:40px;">
+
+        <input type="radio" name="tabs" id="tab1" checked>
+        <label for="tab1" class="tab-btn">Our Values</label>
+
+        <input type="radio" name="tabs" id="tab2">
+        <label for="tab2" class="tab-btn">Our Story</label>
+
+        <input type="radio" name="tabs" id="tab3">
+        <label for="tab3" class="tab-btn">Research and Development</label>
+
+        <!-- TAB CONTENT 1 -->
+        <div class="tab-content" id="content1">
+            <section class="nilai-section">
+                <p><strong>Innovation:</strong> We continuously explore new ideas and technologies to improve water management practices.</p>
+                <p><strong>Integrity:</strong> We uphold the highest ethical standards in every interaction.</p>
+                <p><strong>Collaboration:</strong> We believe in the power of teamwork.</p>
+                <p><strong>Quality:</strong> We prioritize quality in our work.</p>
+            </section>
+        </div>
+
+        <!-- TAB CONTENT 2 -->
+        <div class="tab-content" id="content2">
+            <p>The journey of PT Bayu Surya Bakti Construction began with the visionary idea of our founder, Mr. Ir. I Nyoman Yasa Negara, who has been involved in the water treatment industry for approximately 20 years. Recognizing the growing challenges of water scarcity and pollution in Indonesia, he was inspired to establish a company that could contribute positively to water management in Indonesia.</p>
+            <p>The company was founded in 2014 with a small team of dedicated professionals. Over the years, we have successfully completed various water and wastewater treatment projects across Indonesia. Our portfolio includes advanced solutions for water filtration, industrial wastewater treatment, and recycled water treatment. With every project, we strive to raise standards of environmental responsibility and efficiency in water management.</p>
+            <div class="tab-photos">
+                <img src="images/Profile/1.jpeg" alt="">
+                <img src="images/Profile/2.jpeg" alt="">
+                <img src="images/Profile/3.jpeg" alt="">
+                <img src="images/Profile/4.jpeg" alt="">
+                <img src="images/Profile/5.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 3 -->
+        <div class="tab-content" id="content3">
+            <p>In our commitment to staying at the forefront of water treatment technology, PT BSBK has made significant investments in research and development. Our R&D initiatives focus on exploring new methods, materials, and processes to enhance the efficiency and sustainability of our projects.</p>
+            <p>Through continuous learning and collaboration with industry experts, PT BSBK remains committed to pioneering advancements in water and wastewater treatment technology, creating lasting positive impacts on the environment and society.</p>
+            <p>As part of our technology development efforts, PT Bayu Surya Bakti Construction conducted membrane pilot plant testing in Siak, Riau.</p>
+            <p>The trials were conducted using peat water inlet and treated water from conventional processing at the site. By testing the membrane’s capability on water from the Siak River, which has a high color content, the resulting product water met drinking water standards for color and turbidity.</p>
+            <p>Recovery rates achieved using raw water:</p>
+            <li>Using colored raw water: <strong>50% – 60% Polishing</strong></li>
+            <li>Using conventionally treated water on site: <strong>70% – 78%</strong></li>
+        </div>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <section id="contact-form" class="section bg-light">
+        <div class="container grid-2">
+
+            <div>
+                <h2>Free Consultation</h2>
+                <p>
+                    Tell us about your project needs.  
+                    Our team will contact you within 24 hours.
+                </p>
+
+                <ul class="contact-points">
+                    <li><i class="fas fa-check"></i> Fast response</li>
+                    <li><i class="fas fa-check"></i> Free consultation</li>
+                    <li><i class="fas fa-check"></i> Tailored solutions</li>
+                </ul>
+            </div>
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/maqwwvkg"
+                method="POST"
+            >
+                <input type="text" name="nama_lengkap" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="nomor_telepon" placeholder="Phone Number">
+                <input type="text" name="subjek" placeholder="Subject">
+
+                <textarea
+                    name="pesan"
+                    placeholder="Describe your project needs"
+                    rows="4"
+                ></textarea>
+
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="Consultation Request - BSBK Website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+
+                <button type="submit" class="btn-blue">
+                    Send Consultation Request
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Office Address</h4>
+                <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Bogor Regency</p>
+                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+                <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Useful Links</h4>
+                <div class="footer-links">
+                    <a href="index_eng.html">Home</a>
+                    <a href="TentangKami_eng.html">Tentang Kami</a>
+                    <a href="layanan_eng.html">Layanan</a>
+                    <a href="project_eng.html">Project</a>
+                    <a href="blog_eng.html">Blog</a>
+                    <a href="kontak_eng.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
