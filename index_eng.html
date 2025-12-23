@@ -7,53 +7,47 @@
 
     <link rel="stylesheet" href="css/style_main.css">
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Top Contact Bar -->
     <div class="top-contact-bar">
         <div class="container flex-end contact-items">
             <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
             <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
-            <span><i class="fas fa-clock"></i> Monday – Friday (08:00 – 17:00)</span>
-            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+            <span><i class="fas fa-clock"></i> Monday - Friday (08.00 - 17.00)</span>
+            <a href="kontak.html" class="btn-blue">Request a Free Consultation</a>
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="images/Logo BSBK Transparent.png" alt="BSBK Logo" class="logo-icon">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
                 <span>Bayu Surya Bakti <br> Construction</span>
             </a>
 
-            <!-- Desktop Menu -->
             <div class="menu-desktop">
-            <a href="index_eng.html">Home</a>
-            <a href="TentangKami_eng.html">About Us</a>
-            <a href="layanan_eng.html">Services</a>
-            <a href="project_eng.html">Projects</a>
-            <a href="blog_eng.html">Blog</a>
-
+                <a href="index.html">Home</a>
+                <a href="TentangKami.html">About Us</a>
+                <a href="layanan.html">Services</a>
+                <a href="project.html">Project</a>
+                <a href="blog.html">Blog</a>
                 <div class="menu-item has-dropdown">
                     <button class="dropdown-trigger">
                         Contact <i class="fas fa-chevron-down"></i>
                     </button>
+
                     <div class="dropdown-menu">
-                    <a href="kontak_eng.html">Contact Us</a>
-                    <a href="career_eng.html">Careers</a>
+                        <a href="kontak.html">Contact Us</a>
+                        <a href="career.html">Career</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Language Selector -->
             <div class="lang-selector">
                 <button id="lang-btn">
                     <span id="current-flag">🇺🇸</span>
@@ -67,42 +61,50 @@
                 </div>
             </div>
 
-            <!-- Contact Icons -->
-            <a href="https://api.whatsapp.com/send/?phone=6282114254958" target="_blank" class="round-yellow">
+            <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow">
                 <i class="fas fa-phone-alt"></i>
             </a>
-            <a href="https://mail.google.com/mail/?to=info@bsbkonstruksi.co.id" class="round-yellow">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu hidden">
-            <a href="index_eng.html">Home</a>
-            <a href="TentangKami_eng.html">About Us</a>
-            <a href="layanan_eng.html">Services</a>
-            <a href="project_eng.html">Projects</a>
-            <a href="blog_eng.html">Blog</a>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+            <i class="fas fa-bars"></i>
+        </button>
 
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index.html">Home</a>
+            <a href="TentangKami.html">About Us</a>
+            <a href="layanan.html">Services</a>
+            <a href="project.html">Project</a>
+            <a href="blog.html">Blog</a>
             <div class="menu-item has-dropdown">
                 <button class="dropdown-trigger">
                     Contact <i class="fas fa-chevron-down"></i>
                 </button>
+
                 <div class="dropdown-menu">
-                    <a href="kontak_eng.html">Contact Us</a>
-                    <a href="career_eng.html">Careers</a>
+                    <a href="kontak.html">Contact Us</a>
+                    <a href="career.html">Career</a>
                 </div>
             </div>
 
             <div class="mobile-lang">
-                <span>Language:</span> <span>🇺🇸</span>
+                <span>Language:</span> <span>🇮🇩</span>
             </div>
 
-            <a href="kontak.html" class="btn-blue">Request Free Consultation</a>
+            <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="kontak.html" class="btn-blue">Request a Free Consultation</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <header class="hero-section">
         <div class="css-slider">
             <input type="radio" name="s" id="s1" checked>
@@ -120,162 +122,328 @@
                 <label for="s2"></label>
                 <label for="s3"></label>
             </div>
+
             <div class="nav-arrows">
-                <!-- Slide 1 -->
-                <label for="s3" class="prev s1">&#10094;</label>
-                <label for="s2" class="next s1">&#10095;</label>
+                <!-- arrows for slide 1 -->
+                <label class="prev s1" for="s3">&#10094;</label>
+                <label class="next s1" for="s2">&#10095;</label>
 
-                <!-- Slide 2 -->
-                <label for="s1" class="prev s2">&#10094;</label>
-                <label for="s3" class="next s2">&#10095;</label>
+                <!-- arrows for slide 2 -->
+                <label class="prev s2" for="s1">&#10094;</label>
+                <label class="next s2" for="s3">&#10095;</label>
 
-                <!-- Slide 3 -->
-                <label for="s2" class="prev s3">&#10094;</label>
-                <label for="s1" class="next s3">&#10095;</label>
-                </div>
+                <!-- arrows for slide 3 -->
+                <label class="prev s3" for="s2">&#10094;</label>
+                <label class="next s3" for="s1">&#10095;</label>
+        </div>
+    </div>
 
+    <div class="overlay"></div>
+
+    <div class="hero-content container">
+        <div class="logo-inline">
+            <img src="images/BSBK LOGO Cut Transparent.png" alt="DS Logo" class="logo-icon2">
+            <span>BSB Construction</span>
         </div>
 
-        <div class="overlay"></div>
+        <p class="hero-sub">Water Specialist</p>
+        <h1 class="hero-title">Complete solutions for your water and wastewater treatment</h1>
+        <p class="hero-desc">Safe, Reliable, and Cost Efficient. We offer the Best Contractor Services.</p>
+        <a href="TentangKami.html" class="btn-yellow">Learn More</a>
+    </div>
 
-        <div class="hero-content container">
-            <div class="logo-inline">
-                <img src="images/BSBK LOGO Cut Transparent.png" alt="BSBK Logo" class="logo-icon2">
-                <span>BSB Construction</span>
-            </div>
+            <!-- Arrows -->
 
-            <p class="hero-sub">Water Specialist</p>
-            <h1 class="hero-title">Complete solutions for water and wastewater treatment</h1>
-            <p class="hero-desc">
-                Safe, Reliable, and Cost-Effective. We provide the best contractor services.
-            </p>
-            <a href="TentangKami.html" class="btn-yellow">Learn More</a>
-        </div>
+        <button id="prev-slide" class="carousel-arrow left"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-slide" class="carousel-arrow right"><i class="fas fa-chevron-right"></i></button>
+
     </header>
 
-    <!-- ABOUT SECTION -->
     <section class="section">
         <div class="container text-center mb-40">
             <h2>Our Story</h2>
-            <p>Our journey in delivering the best water treatment solutions.</p>
+            <p>Our journey in providing the best solutions for water treatment.</p>
         </div>
 
         <div class="grid-2">
             <div>
                 <p>
-                    The journey of PT Bayu Surya Bakti Construction began with a creative vision from our founder,
+                    The journey of PT Bayu Surya Bakti Construction began with a creative idea from our founder,
                     Mr. Ir. I Nyoman Yasanegara, who has been involved in the water treatment sector for nearly
-                    20 years. Witnessing the increasing issues of water scarcity and pollution in Indonesia,
-                    he was inspired to establish a company that contributes positively to sustainable water
-                    management in Indonesia.
+                    20 years. Seeing the increasing issues of water scarcity and pollution in Indonesia, he was
+                    inspired to establish a company that could make a positive contribution in the field of
+                    water management in Indonesia.
                 </p>
             </div>
 
             <div class="placeholder-img">
-                <img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="About Us">
+                <img src="images/f9bc4ba1-1bf0-4df0-8667-60c553476014.png" alt="About Us Image">
             </div>
         </div>
     </section>
 
-    <!-- BENEFITS -->
     <section class="section bg-light">
         <div class="container text-center mb-40">
             <h2>Why Choose Us?</h2>
-            <p>Advantages that set us apart from others.</p>
+            <p>The advantages that distinguish us from others.</p>
         </div>
 
         <div class="grid-3">
             <div class="card">
-                <h3>Reliability & Expertise</h3>
-                <p>Supported by an experienced team with proven technical skills.</p>
+                <i class="fa-solid fa-book-bookmark card-icon"></i> 
+                <h3>Reliability and Quality</h3>
+                <p>Supported by an experienced team with proven technical expertise.</p>
             </div>
 
             <div class="card">
-                <h3>Quality Assurance</h3>
-                <p>Every project is delivered with the highest quality standards.</p>
+                <i class="fas fa-handshake card-icon"></i>
+                <h3>Reliability and Quality</h3>
+                <p>Each project is carried out with the highest quality standards.</p>
             </div>
 
             <div class="card">
+                <i class="fas fa-seedling card-icon"></i>
                 <h3>Business Ethics</h3>
                 <p>We are committed to transparency and responsibility in every step.</p>
             </div>
 
             <div class="card">
-                <h3>Trusted Partner</h3>
-                <p>Trusted by partners through a consistent and proven track record.</p>
+                <i class="fa-solid fa-children card-icon"></i> 
+                <h3>Trusted</h3>
+                <p>Trusted by various partners through a consistent work track record.</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section id="contact-form" class="section bg-light">
-        <div class="container grid-2">
+    <!-- VISION & MISSION SECTION -->
+<section class="section">
+    <div class="container text-center mb-40">
+        <h2>Our Vision and Mission</h2>
+        <p>The direction and goals that guide every step we take.</p>
+    </div>
 
-            <div>
-                <h2>Free Consultation</h2>
-                <p>
-                    Tell us about your project needs.  
-                    Our team will contact you within 24 hours.
-                </p>
+    <div class="grid-2">
+        
+        <!-- VISION -->
+        <div class="card">
+            <i class="fas fa-eye card-icon"></i>
+            <h3 class="mb-4">Our Vision</h3>
+            <p>
+                Our vision is to become one of the leading companies in the field of clean water and drinking water treatment, providing sustainable clean water supply and contributing to environmentally friendly environmental technology with guaranteed quality, professionalism, and customer satisfaction.
+            </p>
+        </div>
 
-                <ul class="contact-points">
-                    <li><i class="fas fa-check"></i> Fast response</li>
-                    <li><i class="fas fa-check"></i> Free consultation</li>
-                    <li><i class="fas fa-check"></i> Tailored solutions</li>
-                </ul>
+        <!-- MISSION -->
+        <div class="card">
+            <i class="fas fa-bullseye card-icon"></i>
+            <h3 class="mb-4">Our Mission</h3>
+            <p>
+                Our mission is to provide products and services focused on customer satisfaction in delivering the required water treatment based on health, safety, and environmental regulations.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS SECTION -->
+<section class="section bg-light">
+    <div class="container text-center mb-40">
+        <h2>Certificates & Awards</h2>
+        <p>Recognition of our dedication and quality standards.</p>
+    </div>
+
+    <div class="grid-4 cert-grid">
+
+        <div class="card cert-card">
+            <i class="fas fa-certificate cert-icon green"></i>
+            <h3 class="mb-2">ISO 9001:2015</h3>
+            <p>Quality Management Certification</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-trophy cert-icon yellow"></i>
+            <h3 class="mb-2">ISO 37001:2016</h3>
+            <p>Anti-bribery management system certification</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-leaf cert-icon teal"></i>
+            <h3 class="mb-2">ISO 14001:2015</h3>
+            <p>Green Technology management certification</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hard-hat fa-2x"></i>
+            <h3 class="mb-2">ISO 45001:2018</h3>
+            <p>Occupational health and safety certification</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hands-helping cert-icon blue"></i>
+            <h3 class="mb-2">ASEAN Games 2018 Award</h3>
+            <p>Award for support and dedication as a provider of ASEAN Games 2018 facilities and infrastructure</p>
+        </div>
+
+        <div class="card cert-card">
+            <i class="fas fa-hands-helping cert-icon blue"></i>
+            <h3 class="mb-2">Dumai Water Project of the Year 2023</h3>
+            <p>Dumai project award in 2023</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CLIENT CAROUSEL -->
+<section class="section">
+    <h2 class="text-center">Our Clients</h2>
+
+    <input type="radio" name="client-slide" id="slide1" checked>
+    <input type="radio" name="client-slide" id="slide2">
+    <input type="radio" name="client-slide" id="slide3">
+    <input type="radio" name="client-slide" id="slide4">
+
+    <div class="client-carousel-wrapper">
+
+        <label for="slide4" class="arrow left arrow1">&#10094;</label>
+        <label for="slide1" class="arrow left arrow2">&#10094;</label>
+        <label for="slide2" class="arrow left arrow3">&#10094;</label>
+        <label for="slide3" class="arrow left arrow4">&#10094;</label>
+
+        <label for="slide2" class="arrow right arrow1">&#10095;</label>
+        <label for="slide3" class="arrow right arrow2">&#10095;</label>
+        <label for="slide4" class="arrow right arrow3">&#10095;</label>
+        <label for="slide1" class="arrow right arrow4">&#10095;</label>
+
+        <div class="client-carousel">
+            <div class="slide s1">
+                <div class="client-item"><img src="images/Client/1.png"></div>
+                <div class="client-item"><img src="images/Client/2.png"></div>
+                <div class="client-item"><img src="images/Client/3.jpeg"></div>
+                <div class="client-item"><img src="images/Client/4.png"></div>
             </div>
+            <div class="slide s2">
+                <div class="client-item"><img src="images/Client/5.png"></div>
+                <div class="client-item"><img src="images/Client/6.png"></div>
+                <div class="client-item"><img src="images/Client/7.png"></div>
+                <div class="client-item"><img src="images/Client/8.png"></div>
+            </div>
+            <div class="slide s3">
+                <div class="client-item"><img src="images/Client/9.png"></div>
+                <div class="client-item"><img src="images/Client/10.png"></div>
+                <div class="client-item"><img src="images/Client/11.png"></div>
+                <div class="client-item"><img src="images/Client/12.png"></div>
+            </div>
+            <div class="slide s4">
+                <div class="client-item"><img src="images/Client/13.jpg"></div>
+                <div class="client-item"><img src="images/Client/14.jpg"></div>
+                <div class="client-item"><img src="images/Client/15.png"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <form
-                class="contact-form"
-                action="https://formspree.io/f/maqwwvkg"
-                method="POST"
+<!-- Form -->
+<section id="contact-form" class="section bg-light">
+    <div class="container grid-2">
+
+        <div>
+            <h2>Free Consultation</h2>
+            <p>
+                Tell us about your project needs.  
+                Our team will contact you within 1×24 hours.
+            </p>
+
+            <ul class="contact-points">
+                <li><i class="fas fa-check"></i> Fast response</li>
+                <li><i class="fas fa-check"></i> Free consultation</li>
+                <li><i class="fas fa-check"></i> Solutions tailored to your needs</li>
+            </ul>
+        </div>
+
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/maqwwvkg"
+            method="POST"
+        >
+            <input
+                type="text"
+                name="nama_lengkap"
+                placeholder="Full Name"
+                required
             >
-                <input type="text" name="full_name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="phone" placeholder="Phone Number">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Tell us about your project needs" rows="4"></textarea>
 
-                <input type="hidden" name="_subject" value="Consultation Request - BSBK Website">
-                <input type="hidden" name="_next" value="thank-you.html">
+            <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+            >
 
-                <button type="submit" class="btn-blue">Send Consultation</button>
-            </form>
+            <input
+                type="tel"
+                name="nomor_telepon"
+                placeholder="Phone Number"
+            >
 
-        </div>
-    </section>
+            <input
+                type="text"
+                name="subjek"
+                placeholder="Subject"
+            >
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div>
-                <h4>Office Address</h4>
-                <p>Jl. Raya Narogong KM 16, Limus Nunggal,<br>Cileungsi, Bogor, West Java 16820</p>
-                <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
-                <p><i class="fas fa-clock"></i> 08:00 – 17:00</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
-                </div>
+            <textarea
+                name="pesan"
+                placeholder="Tell us about your project needs"
+                rows="4"
+            ></textarea>
+
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="Consultation Request - BSBK Website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="thank-you.html">
+
+            <button type="submit" class="btn-blue">
+                Send Consultation
+            </button>
+        </form>
+
+    </div>
+</section>  
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>Office Address</h4>
+            <p>Jl. Raya Narogong No.KM 16, Limus Nunggal, <br>Kec. Cileungsi, Kabupaten Bogor, Jawa Barat <br>16820</p>
+            <p><i class="fas fa-map-marker-alt"></i> Cileungsi, Bogor Regency</p>
+            <p><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</p>
+            <p><i class="fas fa-clock"></i> 08:00 - 17:00</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/bsbkonstruksi/?originalSubdomain=id" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/bsbkonstruksi/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@bsbkonstruksi-waterspecialist?si=xretvcdeqQr5ZNcv" class="social-btn"><i class="fab fa-youtube"></i></a>
             </div>
-
-            <div>
-                <h4>Useful Links</h4>
-                <a href="index_eng.html">Home</a>
-                <a href="TentangKami_eng.html">Tentang Kami</a>
-                <a href="layanan_eng.html">Layanan</a>
-                <a href="project_eng.html">Project</a>
-                <a href="blog_eng.html">Blog</a>
-                <a href="kontak_eng.html">Contact</a>
-            </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2023 Bayu Surya Bakti Construction</p>
-            <p>All Rights Reserved</p>
+        <div>
+            <h4>Useful Links</h4>
+            <a href="index.html">Home</a>
+            <a href="TentangKami.html">About Us</a>
+            <a href="layanan.html">Services</a>
+            <a href="project.html">Project</a>
+            <a href="blog.html">Blog</a>
+            <a href="kontak.html">Contact</a>
         </div>
-    </footer>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2023</p>
+        <p>All Rights Reserved</p>
+    </div>
+</footer>
+
+    <!-- WhatsApp -->
+    <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
 
     <script src="script.js"></script>
 </body>

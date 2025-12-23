@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tren-konstruksi-2025",
+    "title": "Tren Konstruksi 2025: Efisiensi, Teknologi, dan Keberlanjutan",
+    "excerpt": "Industri konstruksi terus berkembang dengan adopsi teknologi modern dan fokus keberlanjutan.",
+    "content": "<p>Industri konstruksi pada 2025 mengalami perubahan besar...</p><p>Teknologi BIM, IoT, dan green construction menjadi standar baru.</p>",
+    "category": "Konstruksi",
+    "image": "images/blog1.jpg",
+    "date": "22 Januari 2025"
+  },
+  {
+    "id": "manajemen-proyek-konstruksi",
+    "title": "Manajemen Proyek yang Efektif dalam Konstruksi",
+    "excerpt": "Strategi pengelolaan proyek untuk memastikan kualitas, waktu, dan biaya tetap terkendali.",
+    "content": "<p>Manajemen proyek yang baik adalah kunci keberhasilan...</p>",
+    "category": "Manajemen",
+    "image": "images/blog2.jpg",
+    "date": "18 Januari 2025"
+  },
+  {
+    "id": "air-bersih-umkm",
+    "title": "Optimalisasi Sistem Air Bersih untuk UMKM",
+    "excerpt": "Solusi sederhana untuk meningkatkan efisiensi sistem air bersih pada UMKM.",
+    "content": "<p>Sistem air bersih yang baik membantu UMKM menghemat biaya operasional.</p><p>Dengan perencanaan yang tepat, kualitas dan efisiensi dapat ditingkatkan.</p>",
+    "category": "Infrastruktur",
+    "image": "images/blog-air.jpg",
+    "date": "22 Desember 2025"
+  },
+  {
+    "id": "bijak-lingkungan-konstruksi",
+    "title": "Bijak dalam Menggunakan Lingkungan dalam Konstruksi",
+    "excerpt": "Strategi bijak dalam penggunaan lingkungan untuk proyek konstruksi yang berkelanjutan.",
+    "content": "<p>Penggunaan lingkungan secara bijak sangat penting dalam proyek konstruksi.</p><p>Dengan memperhatikan dampak lingkungan, kita dapat menciptakan solusi yang lebih berkelanjutan.</p>",
+    "category": "Tips",
+    "image": "images/blog-air.jpg",
+    "date": "22 Desember 2027"
+  }
+]

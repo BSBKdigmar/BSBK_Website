@@ -467,10 +467,14 @@ p {
 
 .blog-btn {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: auto;
     font-weight: 600;
     color: #2563eb;
+    text-decoration: none;
 }
+
+
+
 
 /* ===================================================================
    Pagination
