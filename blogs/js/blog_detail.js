@@ -27,3 +27,5 @@ fetch("../../blogs/data/blog.json")
   .catch(function (err) {
     console.error("Detail error:", err);
   });
+
+  

@@ -1,0 +1,563 @@
+[
+  {
+    "id": 1,
+    "category": "energy",
+    "title": "Pembangkit Tenaga Surya – Maratua",
+    "link": "project/project_detail/project_detail.html?id=1",
+    "content": "",
+    "images": [
+      "images/Project/Pembangkit Tenaga Surya/Solar-Panel-Tanake.png",
+      "images/Project/Pembangkit Tenaga Surya/Maratua-1-150x150.png",
+      "images/Project/Pembangkit Tenaga Surya/Maratua-2-150x150.png",
+      "images/Project/Pembangkit Tenaga Surya/Maratua-3-150x150.png"
+    ],
+    "details": {
+      "Lokasi": "Kabupaten Takalar, Bunaken, Kepulauan Maratua",
+      "Sistem": "Panel Surya",
+      "Kapasitas": "174 kW",
+      "Lingkup": "Panel Surya & Elektrikal"
+    }
+  },
+  {
+    "id": 2,
+    "category": "water",
+    "title": "Instalasi Reservoir - Meranti",
+    "link": "project/project_detail/project_detail.html?id=2",
+    "content": "",
+    "images": [ 
+      "images/Project/Instalasi Reservoir/WhatsApp-Image-2022-12-13-at-10.52.16-1-768x432.jpeg",
+      "images/Project/Instalasi Reservoir/tanjung-samak.-2-1-150x150.jpeg",
+      "images/Project/Instalasi Reservoir/tanjung-samak.-3-1-150x150.jpeg",
+      "images/Project/Instalasi Reservoir/tanjung-samak.-4-1-150x150.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Tanjung Samak, Kepulauan Meranti",
+      "Kapasitas": "200 M3",
+      "Metode": "Bolted",
+      "Brand": "Tangki Nero (TKDN)"
+    }
+  },
+  {
+    "id": 3,
+    "category": "water",
+    "title": "Instalasi Reservoir - Kepulauan Riau",
+    "link": "project/project_detail/project_detail.html?id=3",
+    "content": "",
+    "images": [
+      "images/Project/Instalasi Reservoir Riau/Tanki-Nero-Medang-Kampai-947x710.jpeg",
+      "images/Project/Instalasi Reservoir Riau/Tanki-Nero-Medang-Kampai1-150x150.jpeg",
+      "images/Project/Instalasi Reservoir Riau/TANKI-NERO-MEDANGKAMPAI-150x150.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Medang Kampai, Kepulauan Riau",
+      "Kapasitas": "1000 M3",
+      "Metode Pemasangan": "Bolted",
+      "Brand": "Tangki Nero Fusion Bonded Epoxy, Karya Anak Bangsa (TKDN)"
+    }
+  },
+
+  {
+    "id": 4,
+    "category": "water",
+    "title": "Instalasi Reservoir - Nusa Tenggara Barat",
+    "link": "project/project_detail/project_detail.html?id=4",
+    "content": "",
+    "details": {
+      "Lokasi": "Senaru, Nusa Tenggara Barat",
+      "Kapasitas": "700 M3",
+      "Metode Pemasangan": "Bolted",
+      "Brand": "Nero Fusion Bonded Epoxy Tank, Karya Anak Bangsa (TKDN)"
+    }
+  },
+
+  {
+    "id": 5,
+    "category": "water",
+    "title": "Project Canggu BWRO",
+    "link": "project/project_detail/project_detail.html?id=5",
+    "content": "",
+    "images": [
+      "images/Project/Project Canggu BWRO/bwro-9-768x575.jpeg",
+      "images/Project/Project Canggu BWRO/dosing-150x150.jpeg",
+      "images/Project/Project Canggu BWRO/pompa-bwro-150x150.jpeg",
+      "images/Project/Project Canggu BWRO/pretreatment-bwro-150x150.jpeg"
+    ],
+    "details": {
+      "Location": "Canggu, Bali",
+      "System": "Brackish Water Reverse Osmosis (BWRO)",
+      "Capacity": "1 × 25 m³ per day",
+      "Scope": "Procurement & installation of BWRO system, pump installation, and M&E"
+    }
+  },
+
+  {
+    "id": 6,
+    "category": "waste",
+    "title": "Wastewater Treatment Installation at PT Solusi Bangun Indonesia",
+    "link": "project/project_detail/project_detail.html?id=6",
+    "content": "",
+    "images": [
+      "images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.08.39-250x236.png",
+      "images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.08.57.png",
+      "images/Project/Limbah PT solusi Bangun Indonesia/Screen-Shot-2023-09-16-at-20.09.05-250x183.png"
+    ],
+    "details": {
+      "Location": "Narogong, West Java",
+      "System": "Conventional Activated Sludge",
+      "Scope": "Wastewater treatment installation for open coal storage, design engineering, panel & instrumentation installation, and shelter construction"
+    }
+  },
+
+  {
+    "id": 7,
+    "category": "waste",
+    "title": "Bali Wastewater Treatment Installation",
+    "link": "project/project_detail/project_detail.html?id=7",
+    "content": "",
+    "images": [
+      "images/Project/Limbah Bali/aerator-1-150x150.jpeg",
+      "images/Project/Limbah Bali/azud-filter-150x150.jpeg",
+      "images/Project/Limbah Bali/clarfier-947x710.jpeg",
+      "images/Project/Limbah Bali/dosing-1-150x150.jpeg",
+      "images/Project/Limbah Bali/pompa-distribusi-150x150.jpeg"
+    ],
+    "details": {
+      "Location": "Sanur, Bali",
+      "System": "Moving Bed Biofilm Reactor (MBBR)",
+      "Capacity": "1,500 m³ per day",
+      "Scope of Work": "WWTP system, polishing water system, piping, and M&E"
+    }
+  },
+
+  {
+    "id": 8,
+    "category": "waste",
+    "title": "Wastewater Treatment Installation at PT Indoglas Jaya",
+    "link": "project/project_detail/project_detail.html?id=8",
+    "content": "",
+    "images": [],
+    "details": {
+      "Location": "Narogong, West Java",
+      "System": "?",
+      "Scope of Work": "Wastewater treatment installation, design engineering, panel & instrumentation installation, and reservoir"
+    }
+  },
+
+  {
+    "id": 9,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Bali",
+    "link": "project/project_detail/project_detail.html?id=9",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.50-PM-768x768.jpeg",
+      "images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.53-PM-1-150x150.jpeg",
+      "images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.53-PM-150x150.jpeg",
+      "images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.54-PM-150x150.jpeg",
+      "images/Project/Pengolahan air bali/WhatsApp-Image-2023-09-05-at-12.26.56-PM-150x150.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Sanur, Bali",
+      "Sistem": "Brackish Water Reverse Osmosis (BWRO)",
+      "Kapasitas": "300 M3 per hari",
+      "Lingkup": "BWRO Sistem, perpipaan dan M&E"
+    }
+  },
+  {
+    "id": 10,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air di Akademi Angkatan Udara",
+    "link": "project/project_detail/project_detail.html?id=10",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.59-768x373.jpeg",
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.54-150x150.jpeg",
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.58-1-150x150.jpeg",
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2021-08-25-at-09.20.13-150x150.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Akademi Angkatan Udara, Yogyakarta",
+      "Sistem": "Media Filter, Ultrafiltrasi, Panel Surya",
+      "Kapasitas": "Media Filter 6 L/detik, UF 5 L/detik, Panel Surya 46 kW",
+      "Lingkup Pekerjaan": "Sipil bangunan, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser"
+    }
+  },
+  {
+    "id": 11,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Ternate",
+    "link": "project/project_detail/project_detail.html?id=11",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25.jpeg",
+      "images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-1-460x460.jpeg",
+      "images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-2-460x460.jpeg",
+      "images/Project/Pengolahan Air Ternate/WhatsApp-Image-2021-07-30-at-09.35.25-4-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Ternate, Indonesia",
+      "Sistem": "Ultrafiltrasi",
+      "Kapasitas": "100 Liter per detik",
+      "Lingkup Pekerjaan": "Sipil bangunan, instalasi pengolahan air, dan SCADA"
+    }
+  },
+  {
+    "id": 12,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Conventional di Universitas Andalas",
+    "link": "project/project_detail/project_detail.html?id=12",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Sumatera Barat, Indonesia",
+      "Sistem": "Conventional WTP, Media Filter, Ultrafiltrasi",
+      "Metode Pemasangan": "WTP 40 L/detik, Media Filter 3 L/detik, UF 2.5 L/detik",
+      "Lingkup Pekerjaan": "Sipil bangunan, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser"
+    }
+  },
+  {
+    "id": 13,
+    "category": "energy",
+    "title": "Pekerjaan di PAM Jaya",
+    "link": "project/project_detail/project_detail.html?id=13",
+    "content": "",
+    "images": [
+      "images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.15.28-460x460.jpeg",
+      "images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.15.28.jpeg",
+      "images/Project/Pengerjaan Pam Jaya/WhatsApp-Image-2021-11-09-at-05.16.07-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "PAM Jaya Cengkareng, Jakarta",
+      "Lingkup": "Rehabilitasi Booster Pump, Instalasi Booster Pump, Instalasi Panel & Instrumentasi"
+    }
+  },
+  {
+    "id": 14,
+    "category": "water",
+    "title": "Pekerjaan di PT. Solusi Bangun Indonesia",
+    "link": "project/project_detail/project_detail.html?id=14",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Palembang, Sumatera Selatan",
+      "Lingkup Pekerjaan": "Konstruksi Deep Well (Sumur), Instalasi Pipa dan Pompa"
+    }
+  },
+  {
+    "id": 15,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air di Jakabaring Sport City",
+    "link": "project/project_detail/project_detail.html?id=15",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Palembang, Sumatera Barat",
+      "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
+      "Kapasitas": "Media Filter 3 L/detik, UF 2.5 L/detik, Panel Surya 22 kW",
+      "Lingkup Pekerjaan": "Bangunan operasional, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser"
+    }
+  },
+  {
+    "id": 16,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Bali",
+    "link": "project/project_detail/project_detail.html?id=16",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Pelabuhan Benoa, Bali",
+      "Sistem": "Sea Water Reverse Osmosis, Ultrafiltrasi",
+      "Kapasitas": "SWRO 7 L/detik, UF 26 L/detik",
+      "Lingkup Pekerjaan": "Instalasi pengolahan air dan SCADA"
+    }
+  },
+  {
+    "id": 17,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air di Universitas Sebelas Maret",
+    "link": "project/project_detail/project_detail.html?id=17",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Solo, Jawa Tengah",
+      "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
+      "Kapasitas": "Media Filter 2.5 L/detik, UF 2.5 L/detik, Panel Surya 30 kW",
+      "Lingkup Pekerjaan": "Instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser, panel surya"
+    }
+  },
+  {
+    "id": 18,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air di Akademi Militer",
+    "link": "project/project_detail/project_detail.html?id=18",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Akademi Militer Magelang",
+      "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
+      "Kapasitas": "Media Filter 3 L/detik, UF 2.5 L/detik, Panel Surya 22 kW",
+      "Lingkup Pekerjaan": "Bangunan operasional, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser"
+    }
+  },
+  {
+    "id": 19,
+    "category": "waste",
+    "title": "Instalasi Pengolahan Air Limbah Bali",
+    "link": "project/project_detail/project_detail.html?id=19",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.07.00.jpeg",
+      "images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.56-1-460x460.jpeg",
+      "images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.57-1-460x460.jpeg",
+      "images/Project/Pengolahan Air Istana Presiden/WhatsApp-Image-2023-05-19-at-14.06.58-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Istana Merdeka Jakarta & Istana Cipanas Jawa Barat",
+      "Sistem": "Conventional WTP, BWRO, Ultrafiltrasi, Panel Surya",
+      "Kapasitas": "WTP 5 L/detik, UF 9.5 L/detik, BWRO 4.5 L/detik, Panel Surya 20 kW",
+      "Lingkup Pekerjaan": "Bangunan operasional, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser, panel surya"
+    }
+  },
+  {
+    "id": 20,
+    "category": "water",
+    "title": "Pekerjaan di PDAM Surya Sembada",
+    "link": "project/project_detail/project_detail.html?id=20",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Surabaya, Jawa Timur",
+      "Lingkup Pekerjaan": "Rehabilitasi WTP, instalasi pipa & pompa, panel & instrumentasi"
+    }
+  },
+  {
+    "id": 21,
+    "category": "water",
+    "title": "Optimalisasi Sistem Sea Water Reverse Osmosis",
+    "link": "project/project_detail/project_detail.html?id=21",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Nusa Lembongan, Bali",
+      "Sistem": "Optimalisasi SWRO",
+      "Kapasitas": "5 L/detik",
+      "Lingkup Pekerjaan": "Optimalisasi unit produksi, sistem SWRO, elektrikal, distribusi"
+    }
+  },
+  {
+    "id": 22,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air di Akademi Angkatan Udara",
+    "link": "project/project_detail/project_detail.html?id=22",
+    "content": "",
+    "images": [
+      "images/Project/Distribusi Air Bersih Mandalika/mandalika.jpeg",
+      "images/Project/Distribusi Air Bersih Mandalika/182910906_496460828464945_4591256403227939957_n-300x300.jpg",
+      "images/Project/Distribusi Air Bersih Mandalika/mandalika-300x300.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Mandalika, Indonesia",
+      "Kapasitas": "50 L/detik",
+      "Lingkup Pekerjaan": "Instalasi pengolahan air, jaringan perpipaan, reservoir 2800 m3"
+    }
+  },
+  {
+    "id": 23,
+    "category": "water",
+    "title": "Distribusi Air Minum RSCM",
+    "link": "project/project_detail/project_detail.html?id=23",
+    "content": "",
+    "images": [
+      "images/Project/Air Minum RSCM/RSCM.jpeg"
+    ],
+    "details": {
+      "Lokasi": "RS Cipto Mangunkusumo, Jakarta",
+      "Sistem": "Nanofiltrasi, Panel Surya",
+      "Kapasitas": "Nanofiltrasi 1 L/detik, Panel Surya 10 kW",
+      "Lingkup Pekerjaan": "M&E, perpipaan, sistem nanofiltrasi, panel surya"
+    }
+  },
+  {
+    "id": 24,
+    "category": "water",
+    "title": "Supply Air Bersih Ponorogo",
+    "link": "project/project_detail/project_detail.html?id=24",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Ponorogo, Indonesia",
+      "Lingkup Pekerjaan": "Jaringan perpipaan, pemasangan pompa, generator set"
+    }
+  },
+  {
+    "id": 25,
+    "category": "water",
+    "title": "Pekerjaan Rehabilitasi, Penambahan Kapasitas, dan Konstruksi WTP (Partnership dengan PT Synopex Amerta Bakti)",
+    "link": "project/project_detail/project_detail.html?id=25",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Ciasem, Subang",
+      "Sistem": "Sistem Ultrafiltrasi, Sistem WTP Conventional",
+      "Kapasitas": "Ultrafiltrasi (100 Liter per detik) & Sistem Conventional (40 Liter per detik)",
+      "Lingkup Pekerjaan": "Instalasi Pengolahan Air, Sistem SCADA, dan Jaringan Perpipaan"
+    }
+  },
+  {
+    "id": 26,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Conventional Sulabesi",
+    "link": "project/project_detail/project_detail.html?id=26",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Sulabesi, Kepulauan Sula",
+      "Sistem": "Conventional WTP Sistem, Media Filter (Sand Filter)",
+      "Kapasitas": "30 Liter per detik",
+      "Lingkup Pekerjaan": "Instalasi Pengolahan Air Conventional, M&E, Jaringan Perpipaan, dan Reservoir 250 m3"
+    }
+  },
+  {
+    "id": 27,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Conventional Sako Tapan",
+    "link": "project/project_detail/project_detail.html?id=27",
+    "content": "",
+    "details": {
+      "Lokasi": "Sako Tapan, Indonesia",
+      "Sistem": "Conventional WTP Sistem, Media Filter (Sand Filter)",
+      "Kapasitas": "30 Liter per detik",
+      "Lingkup Pekerjaan": "Instalasi Pengolahan Air, Perpipaan, Perlengkapan dan Reservoir 500 m3"
+    }
+  },
+  {
+    "id": 28,
+    "category": "water",
+    "title": "Optimalisasi Sistem Supply Air Bersih",
+    "link": "project/project_detail/project_detail.html?id=28",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Tembilahan, Indragiri Hilir",
+      "Lingkup Pekerjaan": "Optimalisasi Instalasi Pengolahan Air, Pipa Distribusi dan Pipa Transmisi"
+    }
+  },
+  {
+    "id": 29,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Tanjung Samak",
+    "link": "project/project_detail/project_detail.html?id=29",
+    "content": "",
+    "images": [
+      "images/Project/Instalasi Pengolahan Air Tanjung Samak/WhatsApp-Image-2022-12-13-at-10.52.16.jpeg",
+      "images/Project/Instalasi Pengolahan Air Tanjung Samak/tanjung-samak.-2-460x460.jpeg",
+      "images/Project/Instalasi Pengolahan Air Tanjung Samak/tanjung-samak.-3-460x460.jpeg",
+      "images/Project/Instalasi Pengolahan Air Tanjung Samak/tanjung-samak.-4-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Tanjung Samak, Kepulauan Meranti",
+      "Sistem": "Hollow Fiber Nanofiltrasi",
+      "Kapasitas": "13,5 Liter per detik",
+      "Lingkup Pekerjaan": "Pekerjaan Sistem Nanofiltrasi, Perpipaan, Perlengkapan M&E"
+    }
+  },
+  {
+    "id": 30,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Mandalika",
+    "link": "project/project_detail/project_detail.html?id=30",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Pullman Hotel Mandalika, Nusa Tenggara Barat",
+      "Sistem": "Membran Reverse Osmosis (RO)",
+      "Kapasitas": "10 m3 per jam",
+      "Lingkup Pekerjaan": "Sistem Instalasi Pengolahan Air, Sistem SCADA dan Jaringan Perpipaan"
+    }
+  },
+  {
+    "id": 31,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Daan Mogot",
+    "link": "project/project_detail/project_detail.html?id=3",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air Daan Mogot/WhatsApp-Image-2021-11-09-at-05.17.11.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Daan Mogot, Jakarta Barat",
+      "Sistem": "Ultrafiltrasi",
+      "Kapasitas": "80 m3 per jam",
+      "Lingkup Pekerjaan": "Instalasi Pengolahan Air dan Sistem SCADA"
+    }
+  },
+  {
+    "id": 32,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Dumai",
+    "link": "project/project_detail/project_detail.html?id=32",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air Dumai/WhatsApp-Image-2021-07-30-at-21.49.36-1-460x460.jpeg",
+      "images/Project/Pengolahan Air Dumai/WhatsApp-Image-2021-07-16-at-01.21.50-2.jpeg",
+      "images/Project/Pengolahan Air Dumai/WhatsApp-Image-2021-07-16-at-01.21.56-460x460.jpeg",
+      "images/Project/Pengolahan Air Dumai/WhatsApp-Image-2021-07-30-at-21.49.37-460x460.jpeg",
+      "images/Project/Pengolahan Air Dumai/WhatsApp-Image-2021-09-13-at-06.55.41-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Dumai, Indonesia",
+      "Sistem": "Nanofiltrasi, Screen Filter, Panel Surya Hybrid",
+      "Kapasitas": "Nanofiltrasi (50 Liter per detik), Disc Filter (44,4 Liter per detik (2 unit)), Panel Surya Hybrid (5 kW)",
+      "Lingkup Pekerjaan": "Pekerjaan Sipil Bangunan Operasional, Pekerjaan Sistem Instalasi Pengolahan Air, Sistem SCADA, Jaringan Perpipaan dan Panel Surya"
+    }
+  },
+  {
+    "id": 33,
+    "category": "water",
+    "title": "Optimalisasi Sistem Supply Air Bersih",
+    "link": "project/project_detail/project_detail.html?id=33",
+    "content": "",
+    "images": [],
+    "details": {
+      "Lokasi": "Kota Sawahlunto",
+      "Sistem": "Conventional Water Treatment Plant",
+      "Kapasitas": "Wilayah Kandis (30 Liter per detik), Wilayah Lunto (20 Liter per detik (optimalisasi)), Wilayah Batu Tajam (10 Liter per detik (optimalisasi))",
+      "Lingkup Pekerjaan": "Pekerjaan Sistem Instalasi Pengolahan Air Conventional, Perpipaan, Reservoir 500 m3 dan Peralatan M&E"
+    }
+  },
+  {
+    "id": 34,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Rumpin",
+    "link": "project/project_detail/project_detail.html?id=34",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan Air Rumpin/WhatsApp-Image-2021-11-05-at-19.55.57-1.jpeg",
+      "images/Project/Pengolahan Air Rumpin/WhatsApp-Image-2021-11-05-at-19.54.42-460x460.jpeg",
+      "images/Project/Pengolahan Air Rumpin/WhatsApp-Image-2021-11-05-at-19.55.54-1-460x460.jpeg",
+      "images/Project/Pengolahan Air Rumpin/WhatsApp-Image-2021-11-05-at-19.55.56-2-460x460.jpeg",
+      "images/Project/Pengolahan Air Rumpin/WhatsApp-Image-2021-11-05-at-19.55.58-1-460x460.jpeg"
+    ],
+    "details": {
+      "Lokasi": "Pusat Persemaian Modern Rumpin, Jawa Barat",
+      "Sistem": "Ultrafiltrasi",
+      "Kapasitas": "44 m3 per jam",
+      "Lingkup Pekerjaan": "Instalasi Pengolahan Air, Sistem SCADA dan Jaringan Perpipaan"
+    }
+  },
+  {
+    "id": 35,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Gambut ~ Project Investasi",
+    "link": "project/project_detail/project_detail.html?id=35",
+    "content": "",
+    "images": [],
+    "details": {
+      "Periode Pekerjaan": "2022 – 2042",
+      "Lokasi": "Medang Kampai, Dumai, Kepulauan Riau",
+      "Sistem": "Hollow Fiber Nanofiltrasi",
+      "Kapasitas": "125 Liter per detik",
+      "Lingkup Pekerjaan": "Konstruksi, Operasi dan Pemeliharaan Instalasi Pengolahan Air, Sistem Scada, Sistem Jaringan Perpipaan, Sistem Tenaga Surya"
+    }
+  }
+]

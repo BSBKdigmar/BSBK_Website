@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Homepage Clone</title>
+  <meta charset="UTF-8">
+  <title>Blog Detail</title>
+  <link rel="stylesheet" href="../../project/css/style_for_project.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Replace Tailwind with Your Own Stylesheet -->
-    <link rel="stylesheet" href="css/style_project.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
     <!-- Top Contact Bar -->
@@ -31,17 +24,17 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <img src="../../images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
                 <span>Bayu Surya Bakti <br> Konstruksi</span>
             </a>
 
             <!-- Desktop Menu -->
             <div class="menu-desktop">
-                <a href="index.html">Beranda</a>
-                <a href="TentangKami.html">Tentang Kami</a>
-                <a href="layanan.html">Layanan</a>
-                <a href="project.html">Project</a>
-                <a href="blog.html">Blog</a>
+                <a href="../../index.html">Beranda</a>
+                <a href="../../TentangKami.html">Tentang Kami</a>
+                <a href="../../layanan.html">Layanan</a>
+                <a href="../../project.html">Project</a>
+                <a href="../../blog.html">Blog</a>
                 <div class="menu-item has-dropdown">
                     <button class="dropdown-trigger">
                         Kontak <i class="fas fa-chevron-down"></i>
@@ -62,8 +55,8 @@
                 </button>
                 
                 <div class="lang-menu">
-                    <a href="project.html">🇮🇩 Indonesia</a>
-                    <a href="project_eng.html">🇺🇸 English</a>
+                    <a href="blog.html">🇮🇩 Indonesian</a>
+                    <a href="blog_eng.html">🇺🇸 English</a>
                 </div>
                 </div>
 
@@ -103,103 +96,26 @@
                 <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
                 <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
 
-            <button class="btn-blue w-full">Request Project Quote</button>
+            <button class="btn-blue w-full">Meminta Konsultasi Gratis</button>
         </div>
     </nav>
 
-<section class="project-gallery container">
+  
 
-  <div class="gallery-tabs">
-      <button data-filter="all">All</button>
-      <button data-filter="energy">Energi Terbarukan</button>
-      <button data-filter="water">Instalasi Pengolahan Air</button>
-      <button data-filter="waste">Pengolahan Air Limbah</button>
+  <div class="container" id="project-detail">
+    <p>Loading project...</p>
   </div>
 
-  <div class="gallery-grid" id="gallery-grid"></div>
+  <div class="back-wrapper">
+    <a href="../../project.html" class="back-link">
+      <i class="fas fa-arrow-left"></i>
+      Kembali ke Project
+    </a>
+  </div>
 
-  <div id="gallery-pagination" class="gallery-pagination"></div>
 
-</section>
 
-<script>
-  const CURRENT_PAGE = 1;
-</script>
-<script src="project/js/project.js"></script>
-
-    <!-- Form -->
-
-    <section id="contact-form" class="section bg-light">
-        <div class="container grid-2">
-
-            <!-- LEFT -->
-            <div>
-                <h2>Konsultasi Gratis</h2>
-                <p>
-                    Ceritakan kebutuhan proyek Anda.  
-                    Tim kami akan menghubungi Anda dalam 1×24 jam.
-                </p>
-
-                <ul class="contact-points">
-                    <li><i class="fas fa-check"></i> Respon cepat</li>
-                    <li><i class="fas fa-check"></i> Konsultasi tanpa biaya</li>
-                    <li><i class="fas fa-check"></i> Solusi sesuai kebutuhan</li>
-                </ul>
-            </div>
-
-            <!-- RIGHT -->
-            <form
-                class="contact-form"
-                action="https://formspree.io/f/maqwwvkg"
-                method="POST"
-            >
-                <input
-                    type="text"
-                    name="nama_lengkap"
-                    placeholder="Nama Lengkap"
-                    required
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                >
-
-                <input
-                    type="tel"
-                    name="nomor_telepon"
-                    placeholder="Nomor Telepon"
-                >
-
-                <input
-                    type="text"
-                    name="subjek"
-                    placeholder="Subjek"
-                >
-
-                <textarea
-                    name="pesan"
-                    placeholder="Ceritakan kebutuhan proyek Anda"
-                    rows="4"
-                ></textarea>
-
-                <input type="text" name="_gotcha" style="display:none">
-                <input type="hidden" name="_subject" value="Permintaan Konsultasi - Website BSBK">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="thank-you.html">
-
-                <button type="submit" class="btn-blue">
-                    Kirim Konsultasi
-                </button>
-            </form>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
+      <footer class="footer">
         <div class="container footer-grid">
             <div>
                 <h4>Office Address</h4>
@@ -217,12 +133,12 @@
             <div>
                 <h4>Useful Links</h4>
                 <div class="footer-links">
-                    <a href="index.html">Beranda</a>
-                    <a href="TentangKami.html">Tentang Kami</a>
-                    <a href="layanan.html">Layanan</a>
-                    <a href="project.html">Project</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="kontak.html">Kontak</a>
+                    <a href="../../index.html">Beranda</a>
+                    <a href="../../TentangKami.html">Tentang Kami</a>
+                    <a href="../../layanan.html">Layanan</a>
+                    <a href="../../project.html">Project</a>
+                    <a href="../../blog.html">Blog</a>
+                    <a href="../../kontak.html">Kontak</a>
                 </div>
             </div>
         </div>
@@ -232,10 +148,7 @@
             <p>All Rights Reserved</p>
         </div>
     </footer>
-        
-        <!-- WhatsApp -->
-        <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
 
-        <script src="script.js"></script>
+  <script src="../js/project_detail.js"></script>
 </body>
 </html>

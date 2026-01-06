@@ -14,6 +14,9 @@ a { text-decoration: none; color: inherit; }
 button { cursor: pointer; border: none; background:none; }
 
 
+
+
+
 /* ===================================================================
    CONTAINER (Tailwind Accurate)
 =================================================================== */
@@ -42,25 +45,6 @@ button { cursor: pointer; border: none; background:none; }
   #mobile-menu {
     display: none !important;
   }
-}
-
-/* ===================================================================
-   SECTIONS
-=================================================================== */
-.section {
-    padding: 4rem 0;
-}
-
-/* GRID 2 (MISSING – REQUIRED FOR CONTACT LAYOUT) */
-.grid-2 {
-    display: grid;
-    gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .grid-2 {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 
@@ -149,7 +133,6 @@ p {
     padding: 5px 0;
 }
 
-
 .top-contact-bar .contact-items {
     display: flex;
     justify-content: flex-end;
@@ -233,7 +216,7 @@ p {
 =================================================================== */
 .navbar {
     position: sticky;
-    top: 30px; 
+    top: 30px; /* height of contact bar */
     z-index: 999;
     background: #fff;
     border-bottom: 1px solid #e5e7eb;
@@ -261,8 +244,6 @@ p {
     object-fit: contain;
     display: block;
 }
-
-
 
 
 /* Desktop Menu */
@@ -371,339 +352,151 @@ p {
     #mobile-menu { display: none !important; }
 }
 
-
-/* =========================================================
-   FILTERING (GRID RE-FLOWS, NO BLANK SPACE)
-========================================================= */
-
-.gallery-tabs {
-  display: flex;
-  gap: .75rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.gallery-tabs button {
-  padding: .45rem .9rem;
-  border: 1px solid #e5e7eb;
-  border-radius: .25rem;
-  font-size: .875rem;
-  cursor: pointer;
-  background: #fff;
-}
-
-.gallery-tabs button.active {
-  background: #facc15;
-  border-color: #facc15;
-  font-weight: 600;
+/* ===== Container ===== */
+.project-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 
-/* =========================================================
-   PROJECT GALLERY (4 x 3 GRID, NO JS)
-========================================================= */
-
-.project-gallery {
-    margin: 4rem auto;
+/* ===== Title ===== */
+#project-detail {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
-
-/* Grid */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;              
-    gap: 24px;
-}
-
-
-/* Card */
-.gallery-card {
-    background: #f3f4f6;
-    border-radius: .5rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-card[style*="hidden"] {
-    opacity: 0;
-}
-
-.gallery-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,.12);
-}
-
-/* Image */
-.gallery-image {
-    height: 180px;
-    overflow: hidden;
-}
-
-.gallery-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery-image.coming-soon {
-    height: 180px;
-    border: 2px dashed #d1d5db;
-    background: #f9fafb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.gallery-image.coming-soon span {
-    font-size: .85rem;
-    color: #9ca3af;
-    line-height: 1.4;
-}
-
 
 /* Title */
-.gallery-title {
-    padding: .75rem;
-    text-align: center;
-    font-size: .9rem;
-    font-weight: 600;
-    color: #111827;
-}
-
-/* Empty */
-.gallery-card.empty {
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed #d1d5db;
-    background: #fafafa;
-}
-
-.gallery-card.empty span {
-    color: #9ca3af;
-    font-size: .875rem;
-    text-align: center;
-}
-
-/* ================================
-    PAGINATION
-================================ */
-
-/* Pagination */
-.gallery-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 2rem;
-}
-
-/* Normalize ALL items */
-.gallery-pagination button,
-.gallery-pagination span,
-.gallery-pagination a {
-  min-width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1;
-
-  border-radius: 6px;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* Buttons */
-.gallery-pagination button {
-  all: unset;
+#project-detail h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: .75rem;
   color: #111827;
 }
 
-.gallery-pagination button:hover {
-  background: #f3f4f6;
+
+/* Main text */
+#project-detail p {
+  max-width: 720px;
 }
 
-/* Active page */
-.gallery-pagination span.active {
-  background: #facc15;
-  color: #111827;
-  font-weight: 600;
+/* Meta info (date | category) */
+#project-detail > p:first-of-type {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
 }
 
-/* Arrows */
-.gallery-pagination .arrow {
-  font-size: 1rem;
-  font-weight: 600;
+/* ===== Image Gallery ===== */
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 3rem 0;
 }
-
-
-
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 640px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ================================
-   CARD TEXT
-================================ */
-.gallery-text {
-    padding: .6rem .75rem .8rem;
-    text-align: center;
-}
-
-.gallery-desc {
-    font-size: 0.78rem;
-    color: #6b7280;
-    line-height: 1.45;
-    margin-top: .35rem;
-    text-align: left;
-}
-
-.gallery-desc div {
-    margin-bottom: 2px;
-}
-
-.gallery-desc strong {
-    color: #111827;
-    font-weight: 600;
-}
-
-
-/* ===============================
-   PURE CSS SLIDER (JS COMPATIBLE)
-================================ */
-
-.gallery-slider {
-  position: relative;
-  overflow: hidden;
-  height: 180px; /* REQUIRED */
-  background: #e5e7eb;
-}
-
-/* Hide radios */
-.gallery-slider input {
-  display: none;
-}
-
-/* Slides wrapper */
-.gallery-slider [class^="slides"] {
-  display: flex;
+.detail-gallery img {
   width: 100%;
-  height: 100%;
-  transition: transform 0.4s ease;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: all .25s ease;
 }
 
-/* Each image */
+
+.detail-gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ===== Detail Info Box ===== */
+.detail-info {
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 32px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.detail-info p {
+  display: flex;
+  align-items: flex-start;
+}
+
+.detail-info strong {
+  width: 160px;         
+  flex-shrink: 0;     
+  color: #111827;
+}
+
+
+
+/* ===== Content ===== */
+#project-detail > p:last-of-type,
+#project-detail div + p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* ================================
+    Back Button
+================================ */
+
+.back-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 4rem;
+}
+
+.back-link {
+  display: inline-flex;   
+  align-items: center;
+  gap: .75rem;
+  padding: .65rem 1.5rem;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #111827;
+  transition: all .25s ease;
+}
+
+.back-link i {
+  transition: transform .25s ease;
+}
+
+.back-link:hover {
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.back-link:hover i {
+  transform: translateX(-6px);
+}
+
+
+/* ================================
+    GALLERY STYLES
+================================ */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.gallery-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .gallery-slider img {
   width: 100%;
-  height: 100%;
-  flex-shrink: 0;
+  height: 220px;
   object-fit: cover;
 }
-
-/* ===== SLIDE POSITIONS ===== */
-.gallery-slider input:nth-of-type(1):checked ~ [class^="slides"] {
-  transform: translateX(0%);
-}
-.gallery-slider input:nth-of-type(2):checked ~ [class^="slides"] {
-  transform: translateX(-100%);
-}
-.gallery-slider input:nth-of-type(3):checked ~ [class^="slides"] {
-  transform: translateX(-200%);
-}
-.gallery-slider input:nth-of-type(4):checked ~ [class^="slides"] {
-  transform: translateX(-300%);
-}
-
-/* ===== DOTS ===== */
-.slider-dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 2;
-}
-
-.slider-dots label {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.6);
-  cursor: pointer;
-}
-
-/* Active dot */
-.gallery-slider input:nth-of-type(1):checked ~ .slider-dots label:nth-child(1),
-.gallery-slider input:nth-of-type(2):checked ~ .slider-dots label:nth-child(2),
-.gallery-slider input:nth-of-type(3):checked ~ .slider-dots label:nth-child(3),
-.gallery-slider input:nth-of-type(4):checked ~ .slider-dots label:nth-child(4) {
-  background: #2563eb;
-}
-
-
-/* ===================================================================
-   Contact Form
-=================================================================== */
-.contact-form {
-    background: #fff;
-    padding: 30px;
-    border-radius: .75rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px 14px;
-    border-radius: .5rem;
-    border: 1px solid #d1d5db;
-    font-family: inherit;
-    font-size: 14px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #1d78b5;
-}
-
-.contact-points {
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-}
-
-.contact-points li {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.contact-points i {
-    color: #16a34a;
-    margin-right: 8px;
-}
-
 
 /* ===================================================================
    FOOTER
@@ -765,21 +558,5 @@ p {
 
 .social-links :hover {
     color: #facc15;
-}
-
-/* ----------------------------------
-   WHATSAPP BUTTON
----------------------------------- */
-.wa-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #25d366;
-    color: white;
-    font-size: 28px;
-    padding: 14px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 

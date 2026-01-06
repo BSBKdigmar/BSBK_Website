@@ -14,7 +14,7 @@ fetch("blogs/data/blog.json")
         <img src="${blog.image}">
         <div class="blog-content">
           <span class="blog-category">${blog.category}</span>
-          <h3>${blog.title}</h3>
+          <a href="blogs/blog_detail/blog_detail.html?id=${blog.id}"><h3>${blog.title}</h3></a>
           <p>${blog.excerpt}</p>
           <a href="blogs/blog_detail/blog_detail.html?id=${blog.id}" class="blog-btn">
             Baca Selengkapnya →
