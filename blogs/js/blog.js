@@ -1,4 +1,4 @@
-fetch("blogs/data/blog.json")
+fetch("../../blogs/data/blog.json")
   .then(function (res) {
     return res.json();
   })
@@ -14,13 +14,25 @@ fetch("blogs/data/blog.json")
         <img src="${blog.image}">
         <div class="blog-content">
           <span class="blog-category">${blog.category}</span>
-          <a href="blogs/blog_detail/blog_detail.html?id=${blog.id}"><h3>${blog.title}</h3></a>
+          <div class="blog-date">
+            <i class="fa-regular fa-calendar"></i> ${blog.date}
+          </div>
+
+          <a href="blogs/blog_detail/blog_detail.html?id=${blog.id}">
+            <h3>${blog.title}</h3>
+          </a>
+
           <p>${blog.excerpt}</p>
+          <br>
           <a href="blogs/blog_detail/blog_detail.html?id=${blog.id}" class="blog-btn">
             Baca Selengkapnya →
           </a>
+          <br>
         </div>
       `;
+
+
+
 
       grid.appendChild(card);
     });

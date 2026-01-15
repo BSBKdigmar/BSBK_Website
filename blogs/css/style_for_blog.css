@@ -393,14 +393,38 @@ p {
 
 /* ===== Hero Image ===== */
 .blog-hero {
-  margin: 2.5rem 0;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
 .blog-hero img {
   width: 100%;
-  border-radius: 14px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;  
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .blog-hero img {
+    max-height: 240px;
+  }
+}
+
+/* ===== Company Link ===== */  
+
+.company-link {
+  color: #0B6FA4; /* water blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.company-link:hover {
+  color: #084F75;
+  text-decoration: underline;
+}
+
 
 /* ===== Content ===== */
 .blog-content {

@@ -18,14 +18,18 @@ fetch("../../blogs/data/blog.json")
     }
 
     container.innerHTML = `
-      <h1>${blog.title}</h1>
-      <p><strong>${blog.date}</strong> | ${blog.category}</p>
-      <img src="../../${blog.image}" style="max-width:100%; margin:20px 0;">
-      ${blog.content}
+      <h1 class="blog-title">${blog.title}</h1>
+      <p class="blog-meta"><strong>${blog.date}</strong> | ${blog.category}</p>
+
+      <div class="blog-hero">
+        <img src="../../${blog.image}" alt="${blog.title}">
+      </div>
+
+      <div class="blog-content">
+        ${blog.content}
+      </div>
     `;
   })
   .catch(function (err) {
     console.error("Detail error:", err);
   });
-
-  

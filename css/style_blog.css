@@ -403,9 +403,12 @@ p {
 }
 
 .blog-card img {
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
+
+
 
 .blog-card-content {
     padding: 1.5rem;
@@ -455,9 +458,21 @@ p {
 }
 
 .blog-category {
-    font-size: .75rem;
-    font-weight: 700;
-    color: #facc15;
+  display: block;       
+  font-size: 1rem;       
+  font-weight: 700;      
+  color: #facc15;
+  margin-bottom: 4px;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.blog-date i {
+  margin-right: 4px;
 }
 
 .featured-content h2 {
