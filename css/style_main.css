@@ -46,6 +46,8 @@ button { cursor: pointer; border: none; background:none; }
 
 
 
+
+
 /* ===================================================================
    UTILITY CLASSES 
 =================================================================== */
@@ -160,6 +162,21 @@ p {
     font-size:.875rem;
     margin-left: 10px;
 }
+
+@media (max-width:1023px) {
+
+  .top-contact-bar {
+    position: static;   
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;            
+    z-index: 999;
+  }
+
+}
+
 
 /* ===================================================================
    DESKTOP DROPDOWN
@@ -321,6 +338,20 @@ p {
 }
 
 /* MOBILE MENU BUTTON */
+
+@media (max-width:1023px) {
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  }
+
+}
+
 .mobile-menu-btn {
     font-size: 1.5rem;
     color: #111827;
@@ -389,6 +420,7 @@ p {
     border-radius: .25rem;
     text-align: center;
 }
+
 
 
 /* ===================================================================
@@ -578,6 +610,15 @@ p {
 .carousel-dots button.active {
     background:#facc15;
     opacity:1;
+}
+
+@media (max-width:640px) {
+
+  .hero-section {
+    height: auto;
+    min-height: 75vh;
+  }
+
 }
 
 
@@ -832,12 +873,6 @@ input[type="radio"][name="client-slide"] {
     gap:2rem;
 }
 
-@media(min-width:768px){
-    .footer-grid {
-        grid-template-columns:1fr 1fr;
-    }
-}
-
 .footer h4 {
     font-size:1.125rem;
     font-weight:600;
@@ -875,6 +910,20 @@ input[type="radio"][name="client-slide"] {
 .social-links :hover {
     color: #facc15;
 }
+
+@media (max-width:640px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+}
+
 
 
 /* ===================================================================
@@ -956,9 +1005,24 @@ input[type="radio"][name="client-slide"] {
 }
 
 /* Prevent hero content from overflowing */
-@media(max-width:640px){
-    .hero-content { max-width:90%; }
-    .hero-title { font-size:1.75rem !important; line-height:1.25; }
+@media (max-width:640px) {
+
+  .hero-content {
+    top: auto;
+    transform: none;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-title {
+    font-size: 1.6rem !important;
+    line-height: 1.3;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
 }
 
 /* ===================================================================

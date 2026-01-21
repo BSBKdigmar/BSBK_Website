@@ -172,6 +172,20 @@ p {
     margin-left: 10px;
 }
 
+@media (max-width:1023px) {
+
+  .top-contact-bar {
+    position: static;   
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;            
+    z-index: 999;
+  }
+
+}
+
 /* ===================================================================
    DESKTOP DROPDOWN
 =================================================================== */
