@@ -858,6 +858,7 @@ input[type="radio"][name="client-slide"] {
 /* ===================================================================
    FOOTER
 =================================================================== */
+
 .footer {
     background:#111827;
     color:white;
@@ -871,6 +872,12 @@ input[type="radio"][name="client-slide"] {
 .footer-grid {
     display:grid;
     gap:2rem;
+}
+
+@media(min-width:768px){
+    .footer-grid {
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 .footer h4 {
@@ -910,21 +917,6 @@ input[type="radio"][name="client-slide"] {
 .social-links :hover {
     color: #facc15;
 }
-
-@media (max-width:640px) {
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-
-}
-
-
 
 /* ===================================================================
    WHATSAPP FLOATING BUTTON
