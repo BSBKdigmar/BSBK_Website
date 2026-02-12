@@ -217,7 +217,7 @@ p {
 .top-contact-bar .contact-mobile {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* 🔥 push all content right */
+    justify-content: flex-end; 
     gap: 1rem;
 }
 
