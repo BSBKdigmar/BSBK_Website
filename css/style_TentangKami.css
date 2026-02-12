@@ -98,6 +98,12 @@ button { cursor: pointer; border: none; background:none; }
 /* ===================================================================
    TYPE
 =================================================================== */
+.hero-title,
+h1 {
+    margin-top: 48px;
+}
+
+
 h1.hero-title {
     font-size: 2rem;
     line-height:1.2;
@@ -147,6 +153,69 @@ p {
     background: #111827;
     color: #fff;
     padding: 5px 0;
+    font-size: 0.85rem;
+}
+
+.contact-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-left a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+
+.contact-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 6px;
+    color: #facc15;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.contact-item span {
+    white-space: nowrap;
 }
 
 
@@ -157,6 +226,13 @@ p {
     gap: 1.5rem;
 }
 
+.top-contact-bar .contact-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* 🔥 push all content right */
+    gap: 1rem;
+}
+
 .top-contact-bar span {
     display: flex;
     align-items: center;
@@ -164,26 +240,110 @@ p {
 }
 
 .btn-blue {
-    background: #2563eb;
-    color: white;
-    padding: .45rem 1rem;
-    border-radius: .25rem;
-    font-size: .875rem;
+    background:#2563eb;
+    color:white;
+    padding:.5rem 1rem;
+    border-radius:.25rem;
+    font-size:.875rem;
+    margin-left: 10px;
 }
 
-@media (max-width:1023px) {
-
-  .top-contact-bar {
-    position: static;   
-  }
-
-  .navbar {
-    position: sticky;
-    top: 0;            
-    z-index: 999;
-  }
-
+.nav-actions-mobile {
+    display: none;
 }
+
+@media (max-width: 1023px) {
+    .nav-actions-mobile {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .mobile-lang-selector button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ===== TOP CONTACT BAR ===== */
+    .top-contact-bar {
+        font-size: 0.75rem;
+        padding: 2px 0;
+        line-height: 1;
+    }
+
+    /* Remove container padding influence */
+    .top-contact-bar .container {
+        padding: 0;
+    }
+
+    /* Main layout */
+    .contact-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Stack phone + email */
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        line-height: 1.1;
+    }
+
+    /* Phone */
+    .contact-left a:first-child {
+        order: 1;
+        font-size: 0.75rem;
+    }
+
+    /* ✨ Email centered */
+    .contact-email {
+        order: 2;
+        font-size: 0.72rem;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        line-height: 1.1;
+    }
+
+    /* Icons */
+    .contact-left i {
+        font-size: 0.8rem;
+        flex-shrink: 0;
+    }
+
+    /* CTA button */
+    .btn-blue {
+        order: 3;
+        margin-top: 2px;
+        padding: 0.35rem 0.8rem;
+        font-size: 0.7rem;
+        line-height: 1;
+        border-radius: 2px;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
 
 /* ===================================================================
    DESKTOP DROPDOWN
@@ -242,12 +402,44 @@ p {
 }
 
 
+.dropdown-menu,
+.lang-menu {
+    position: absolute;
+    z-index: 20000;
+}
+
+/* MOBILE DROPDOWN FIX */
+@media (max-width: 768px) {
+    #mobile-menu .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    #mobile-menu .has-dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    #mobile-menu .dropdown-trigger {
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+}
+
+
+
 /* ===================================================================
    NAVBAR
 =================================================================== */
 .navbar {
-    position: sticky;
-    top: 30px; 
+    position: fixed;
+    top: 50px; 
+    left: 0;
+    width: 100%;
     z-index: 999;
     background: #fff;
     border-bottom: 1px solid #e5e7eb;
@@ -319,6 +511,69 @@ p {
     .mobile-menu-btn { display: none; }
 }
 
+.mobile-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #111827;
+}
+
+/* DESKTOP BREAKPOINT */
+@media (min-width:1024px) {
+    .menu-desktop { display: flex; }
+    .mobile-menu-btn { display: none; }
+}
+
+
+
+@media (max-width: 767px) {
+    .nav-container {
+        display: flex;
+        align-items: flex-start; /* move items to top */
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-actions-mobile {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .nav-actions-mobile .mobile-menu-btn {
+        margin: 0;
+    }
+}
+
+
+.nav-actions-mobile {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .nav-actions-mobile {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .mobile-lang-selector button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
 /* ===================================================================
    LANGUAGE SELECTOR
 =================================================================== */
@@ -357,13 +612,30 @@ p {
    MOBILE MENU
 =================================================================== */
 .mobile-menu {
-    background: #fff;
-    border-top: 1px solid #e5e7eb;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    background: #fff;
+    padding: 1.25rem;
+
+    position: fixed;
+    top: 120px; 
+    left: 0;
+    width: 100%;
+
+    z-index: 999;
+    overflow-y: auto;
+
+    /* IMPORTANT */
+    max-height: calc(100vh - 110px);
 }
+
+
+.hidden {
+    display: none;
+}
+
 
 .mobile-lang {
     display: flex;
@@ -384,19 +656,46 @@ p {
 }
 
 
+
+
 /* ----------------------------------
    ABOUT HEADER SECTION
 ---------------------------------- */
 .about-header-section {
-    padding: 60px 0;
+    padding-top: 50px; 
+    padding-bottom: 60px;
 }
 
+
+/* Default (desktop) */
 .about-container {
-    width: 70%;
-    margin: 0 auto;
     display: flex;
-    gap: 50px;
+    gap: 60px;
     align-items: flex-start;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .about-title {
+        font-size: 22px;
+        padding: 0 1rem;
+    }
+
+    .about-text {
+        padding: 0 1rem;
+        text-align: left;
+    }
 }
 
 .about-title {
@@ -686,3 +985,15 @@ p {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
+/* HIDE contact icons on mobile */
+@media (max-width: 768px) {
+    .menu-desktop .round-yellow {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .round-yellow {
+        display: none;
+    }
+}

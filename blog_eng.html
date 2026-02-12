@@ -23,75 +23,123 @@
 
 <body>
 
-<!-- Top Contact Bar -->
-<div class="top-contact-bar">
-    <div class="container flex-end contact-items">
-        <span><i class="fas fa-phone"></i> +62 821 3078 7514</span>
-        <span><i class="fas fa-envelope"></i> info@bsbkonstruksi.co.id</span>
-        <span><i class="fas fa-clock"></i> Monday - Friday (08:00 - 17:00)</span>
-        <a href="kontak.html" class="btn-blue">Request a Free Consultation</a>
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container contact-mobile">
+            <div class="contact-left">
+                <a href="tel:+6282130787514">
+                    <i class="fas fa-phone"></i>
+                    +62 821 3078 7514
+                </a>
+
+                <a href="mailto:info@bsbkonstruksi.co.id" class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    info@bsbkonstruksi.co.id
+                </a>
+                <a href="kontak_eng.html" class="btn-blue">Request a Free Consultation</a>
+            </div>
     </div>
 </div>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container nav-container">
-        <a href="index.html" class="logo">
-            <img src="images/Logo BSBK Transparent.png" alt="Company Logo" class="logo-icon">
-            <span>Bayu Surya Bakti <br> Construction</span>
-        </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo BSBK Transparent.png" alt="DS Logo" class="logo-icon">
+                <span>Bayu Surya Bakti <br> Construction</span>
+            </a>
 
-        <div class="menu-desktop">
-            <a href="index_eng.html">Home</a>
-            <a href="TentangKami_eng.html">About Us</a>
-            <a href="layanan_eng.html">Services</a>
-            <a href="project_eng.html">Projects</a>
-            <a href="blog_eng.html">Blog</a>
+            <!-- Desktop Menu -->
+            <div class="menu-desktop">
+                <a href="index_eng.html">Home</a>
+                <a href="TentangKami_eng.html">About Us</a>
+                <a href="layanan_eng.html">Services</a>
+                <a href="project_eng.html">Projects</a>
+                <a href="blog_eng.html">Blog</a>
+                <div class="menu-item has-dropdown">
+                    <button class="dropdown-trigger">
+                        Contact <i class="fas fa-chevron-down"></i>
+                    </button>
 
-            <div class="menu-item has-dropdown">
-                <button class="dropdown-trigger">
-                    Contact <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="dropdown-menu">
-                    <a href="kontak_eng.html">Contact Us</a>
-                    <a href="career_eng.html">Careers</a>
+                    <div class="dropdown-menu">
+                        <a href="kontak_eng.html">Contact Us</a>
+                        <a href="career_eng.html">Career</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Language Selector -->
-            <div class="lang-selector">
+                <!-- Lang Selector -->
+                <div class="lang-selector">
                 <button id="lang-btn">
                     <span id="current-flag">🇺🇸</span>
                     <span id="current-lang-text">EN</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
+                
                 <div class="lang-menu">
                     <a href="blog.html">🇮🇩 Indonesian</a>
                     <a href="blog_eng.html">🇺🇸 English</a>
                 </div>
+                </div>
+
+                <!-- Contact Icons -->
+                <a href="https://api.whatsapp.com/send/?phone=6282114254958&text&type=phone_number&app_absent=0" target="_blank" class="round-yellow"> <i class="fas fa-phone-alt"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
             </div>
 
-            <a href="#" class="round-yellow"><i class="fas fa-phone-alt"></i></a>
-            <a href="#" class="round-yellow"><i class="fas fa-envelope"></i></a>
+           <!-- Mobile Menu Button -->
+            <div class="nav-actions-mobile">
+                <div class="lang-selector mobile-lang-selector">
+                    <button id="lang-btn-mobile">
+                        <span>🇺🇸 English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="lang-menu">
+                        <a href="blog.html">🇮🇩 Indonesia</a>
+                        <a href="blog_eng.html">🇺🇸 English</a>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden');">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
 
-        <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="index_eng.html">Home</a>
+            <a href="TentangKami_eng.html">About Us</a>
+            <a href="layanan_eng.html">Services</a>
+            <a href="project_eng.html">Projects</a>
+            <a href="blog_eng.html">Blog</a>
+            <div class="menu-item has-dropdown">
+                <button class="dropdown-trigger">
+                    Contact <i class="fas fa-chevron-down"></i>
+                </button>
 
-<!-- Blog Hero -->
-<section class="blog-hero">
-    <div class="container text-center">
-        <span class="blog-label">INSIGHT & ARTICLE</span>
-        <h1>Insights & Industry Updates</h1>
-        <p>
-            Articles, insights, and updates on construction, infrastructure,
-            and best practices in the industry.
-        </p>
-    </div>
-</section>
+                <div class="dropdown-menu">
+                    <a href="kontak_eng.html">Contact Us</a>
+                    <a href="career_eng.html">Career</a>
+                </div>
+            </div>
+            <button class="btn-blue w-full">Request Free Consultation</button>
+        </div>
+    </nav>
+
+
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container text-center">
+            <span class="blog-label">INSIGHT & ARTICLE</span>
+            <h1>Insights & Industry Updates</h1>
+            <p>
+                Articles, insights, and updates on construction, infrastructure,
+                and best practices in the industry.
+            </p>
+        </div>
+    </section>
 
     <!-- Featured Blog -->
     <section class="featured-blog">
@@ -179,5 +227,16 @@
 <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
 
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#mobile-menu .dropdown-trigger').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            this.parentElement.classList.toggle('open');
+        });
+    });
+});
+</script>
+
 </body>
 </html>
