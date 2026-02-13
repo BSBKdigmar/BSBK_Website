@@ -265,6 +265,15 @@
         <a href="#" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
 
         <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('#mobile-menu .dropdown-trigger').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                this.parentElement.classList.toggle('open');
+            });
+        });
+    });
+    </script>
 </body>
 </html>
 
