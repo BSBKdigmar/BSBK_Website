@@ -28,6 +28,18 @@ fetch("../../blogs/data/blog.json")
       <div class="blog-content">
         ${blog.content}
       </div>
+
+      <div class="detail-gallery">
+        ${
+          Array.isArray(blog.inline_image) && blog.inline_image.length > 0
+            ? blog.inline_image
+                .map(function (img) {
+                  return `<img src="/${img}" alt="${blog.title}" style="max-width:100%; margin:10px 0;">`;
+                })
+                .join("")
+            : "<p>blog images coming soon.</p>"
+        }
+      </div>
     `;
   })
   .catch(function (err) {

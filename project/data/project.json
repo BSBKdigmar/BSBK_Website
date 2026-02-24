@@ -103,7 +103,7 @@
     ],
     "details": {
       "Location": "Narogong, West Java",
-      "System": "Conventional Activated Sludge",
+      "System": "Konvensional Activated Sludge",
       "Scope": "Wastewater treatment installation for open coal storage, design engineering, panel & instrumentation installation, and shelter construction"
     }
   },
@@ -163,6 +163,25 @@
       "Lingkup": "BWRO Sistem, perpipaan dan M&E"
     }
   },
+
+  { "id": 36,
+    "category": "water",
+    "title": "Instalasi Pengolahan Air Di Akademi Kepolisian Semarang",
+    "link": "project/project_detail/project_detail.html?id=36",
+    "content": "",
+    "images": [
+      "images/Project/Pengolahan air di akademi polisi/WhatsApp Image 2026-02-20 at 15.19.48.jpeg",
+      "images/Project/Pengolahan air di akademi polisi/WhatsApp Image 2026-02-20 at 15.19.48 (1).jpeg",
+      "images/Project/Pengolahan air di akademi polisi/WhatsApp Image 2026-02-20 at 15.22.10.jpeg",
+      "images/Project/Pengolahan air di akademi polisi/WhatsApp Image 2026-02-20 at 15.21.40 (1).jpeg"
+    ],
+    "details": {
+      "Lokasi": "Semarang, Jawa Tengah",
+      "Sistem": "Pengolahan Air dengan Ultra filtrasi dan UV",
+      "Kapasitas": "2.5 lps, per hari",
+      "Lingkup": "BWRO Sistem, perpipaan dan M&E"
+    }
+  },
   {
     "id": 10,
     "category": "water",
@@ -171,9 +190,9 @@
     "content": "",
     "images": [
       "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.59-768x373.jpeg",
-      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.54-150x150.jpeg",
-      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2023-05-19-at-14.06.58-1-150x150.jpeg",
-      "images/Project/Pengolahan Air di Akademi udara/WhatsApp-Image-2021-08-25-at-09.20.13-150x150.jpeg"
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp Image 2026-02-20 at 15.40.24.jpeg",
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp Image 2026-02-20 at 14.59.08.jpeg",
+      "images/Project/Pengolahan Air di Akademi udara/WhatsApp Image 2026-02-20 at 15.02.15.jpeg"
     ],
     "details": {
       "Lokasi": "Akademi Angkatan Udara, Yogyakarta",
@@ -204,10 +223,15 @@
   {
     "id": 12,
     "category": "water",
-    "title": "Instalasi Pengolahan Air Conventional di Universitas Andalas",
+    "title": "Instalasi Pengolahan Air konvensional di Universitas Andalas",
     "link": "project/project_detail/project_detail.html?id=12",
     "content": "",
-    "images": [],
+    "images": [
+      "images/Project/IPA ANDALAS/WhatsApp Image 2026-02-20 at 14.48.44.jpeg",
+      "images/Project/IPA ANDALAS/WhatsApp Image 2026-02-20 at 14.50.46.jpeg",
+      "images/Project/IPA ANDALAS/WhatsApp Image 2026-02-20 at 14.52.03.jpeg",
+      "images/Project/IPA ANDALAS/WhatsApp Image 2026-02-20 at 14.48.47.jpeg"
+    ],
     "details": {
       "Lokasi": "Sumatera Barat, Indonesia",
       "Sistem": "Conventional WTP, Media Filter, Ultrafiltrasi",
@@ -253,17 +277,22 @@
     "details": {
       "Lokasi": "Palembang, Sumatera Barat",
       "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
-      "Kapasitas": "Media Filter 3 L/detik, UF 2.5 L/detik, Panel Surya 22 kW",
+      "Kapasitas": "Media Filter 3 L/detik, UF 5 L/detik, Panel Surya 22 kW",
       "Lingkup Pekerjaan": "Bangunan operasional, instalasi pengolahan air, SCADA, perpipaan, water fountain & dispenser"
     }
   },
   {
     "id": 16,
     "category": "water",
-    "title": "Instalasi Pengolahan Air Bali",
+    "title": "Instalasi Pengolahan Air Laut SWRO Benoa, Bali",
     "link": "project/project_detail/project_detail.html?id=16",
     "content": "",
-    "images": [],
+    "images": [
+      "images/Project/SWRO Benoa/WhatsApp Image 2026-02-20 at 16.12.40.jpeg",
+      "images/Project/SWRO Benoa/WhatsApp Image 2026-02-20 at 16.13.10.jpeg",
+      "images/Project/SWRO Benoa/WhatsApp Image 2026-02-20 at 16.13.58.jpeg",
+      "images/Project/SWRO Benoa/WhatsApp Image 2026-02-20 at 16.14.24.jpeg"
+    ],
     "details": {
       "Lokasi": "Pelabuhan Benoa, Bali",
       "Sistem": "Sea Water Reverse Osmosis, Ultrafiltrasi",
@@ -277,7 +306,12 @@
     "title": "Instalasi Pengolahan Air di Universitas Sebelas Maret",
     "link": "project/project_detail/project_detail.html?id=17",
     "content": "",
-    "images": [],
+    "images": [
+      "images/Project/Universitas Sebelas Maret/WhatsApp Image 2026-02-20 at 15.51.10.jpeg",
+      "images/Project/Universitas Sebelas Maret/WhatsApp Image 2026-02-20 at 15.51.53.jpeg",
+      "images/Project/Universitas Sebelas Maret/WhatsApp Image 2026-02-20 at 15.51.54 (1).jpeg",
+      "images/Project/Universitas Sebelas Maret/WhatsApp Image 2026-02-20 at 15.51.54.jpeg"
+    ],
     "details": {
       "Lokasi": "Solo, Jawa Tengah",
       "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
@@ -291,7 +325,9 @@
     "title": "Instalasi Pengolahan Air di Akademi Militer",
     "link": "project/project_detail/project_detail.html?id=18",
     "content": "",
-    "images": [],
+    "images": [
+      "images/Project/Pengolahan Air di Akademi Militer/WhatsApp Image 2026-02-20 at 15.39.26.jpeg"
+    ],
     "details": {
       "Lokasi": "Akademi Militer Magelang",
       "Sistem": "Sand Filter, Carbon Filter, Ultrafiltrasi, Panel Surya",
@@ -302,7 +338,7 @@
   {
     "id": 19,
     "category": "waste",
-    "title": "Instalasi Pengolahan Air Limbah Bali",
+    "title": "Instalasi Pengolahan Air Minum Berbasis Membran Istana Negara & Istana Cipanas",
     "link": "project/project_detail/project_detail.html?id=19",
     "content": "",
     "images": [
@@ -347,7 +383,7 @@
   {
     "id": 22,
     "category": "water",
-    "title": "Instalasi Pengolahan Air di Akademi Angkatan Udara",
+    "title": "Instalasi Pengolahan Air di Mandalika",
     "link": "project/project_detail/project_detail.html?id=22",
     "content": "",
     "images": [
@@ -406,7 +442,7 @@
   {
     "id": 26,
     "category": "water",
-    "title": "Instalasi Pengolahan Air Conventional Sulabesi",
+    "title": "Instalasi Pengolahan Air Konvensional Sulabesi",
     "link": "project/project_detail/project_detail.html?id=26",
     "content": "",
     "images": [],
@@ -420,11 +456,17 @@
   {
     "id": 27,
     "category": "water",
-    "title": "Instalasi Pengolahan Air Conventional Sako Tapan",
+    "title": "Instalasi Pengolahan Air Sako Tapan, Kab.Pesisir Selatan, Sumbar",
     "link": "project/project_detail/project_detail.html?id=27",
     "content": "",
+    "images": [
+      "images/Project/IPA Sakotapan/WhatsApp Image 2026-02-20 at 16.21.32 (1).jpeg",
+      "images/Project/IPA Sakotapan/WhatsApp Image 2026-02-20 at 16.22.31 (1).jpeg",
+      "images/Project/IPA Sakotapan/WhatsApp Image 2026-02-20 at 16.22.31 (2).jpeg",
+      "images/Project/IPA Sakotapan/WhatsApp Image 2026-02-20 at 16.23.59 (1).jpeg"
+    ],
     "details": {
-      "Lokasi": "Sako Tapan, Indonesia",
+      "Lokasi": "Sako Tapan, Pesisir selatan, Sumbar",
       "Sistem": "Conventional WTP Sistem, Media Filter (Sand Filter)",
       "Kapasitas": "30 Liter per detik",
       "Lingkup Pekerjaan": "Instalasi Pengolahan Air, Perpipaan, Perlengkapan dan Reservoir 500 m3"
@@ -433,7 +475,7 @@
   {
     "id": 28,
     "category": "water",
-    "title": "Optimalisasi Sistem Supply Air Bersih",
+    "title": "Optimalisasi Sistem Supply Air Bersih Tembilahan",
     "link": "project/project_detail/project_detail.html?id=28",
     "content": "",
     "images": [],
@@ -464,7 +506,7 @@
   {
     "id": 30,
     "category": "water",
-    "title": "Instalasi Pengolahan Air Mandalika",
+    "title": "Instalasi Pengolahan BWRO Pullman Mandalika",
     "link": "project/project_detail/project_detail.html?id=30",
     "content": "",
     "images": [],
@@ -514,13 +556,13 @@
   {
     "id": 33,
     "category": "water",
-    "title": "Optimalisasi Sistem Supply Air Bersih",
+    "title": "Optimalisasi Sistem Supply Air Bersih Sawahlunto",
     "link": "project/project_detail/project_detail.html?id=33",
     "content": "",
     "images": [],
     "details": {
       "Lokasi": "Kota Sawahlunto",
-      "Sistem": "Conventional Water Treatment Plant",
+      "Sistem": "konvensional Water Treatment Plant",
       "Kapasitas": "Wilayah Kandis (30 Liter per detik), Wilayah Lunto (20 Liter per detik (optimalisasi)), Wilayah Batu Tajam (10 Liter per detik (optimalisasi))",
       "Lingkup Pekerjaan": "Pekerjaan Sistem Instalasi Pengolahan Air Conventional, Perpipaan, Reservoir 500 m3 dan Peralatan M&E"
     }

@@ -410,7 +410,7 @@ p {
 =================================================================== */
 .navbar {
     position: fixed;
-    top: 40px; 
+    top: 50px; 
     left: 0;
     width: 100%;
     z-index: 999;
@@ -919,6 +919,9 @@ p {
 }
 .gallery-slider input:nth-of-type(4):checked ~ [class^="slides"] {
   transform: translateX(-300%);
+}
+.gallery-slider input:nth-of-type(5):checked ~ [class^="slides"] {
+  transform: translateX(-400%);
 }
 
 /* ===== DOTS ===== */
