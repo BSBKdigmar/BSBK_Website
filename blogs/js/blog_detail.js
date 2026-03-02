@@ -32,11 +32,23 @@ fetch("../../blogs/data/blog.json")
       <div class="detail-gallery">
         ${
           Array.isArray(blog.inline_image) && blog.inline_image.length > 0
-            ? blog.inline_image
-                .map(function (img) {
-                  return `<img src="/${img}" alt="${blog.title}" style="max-width:100%; margin:10px 0;">`;
-                })
-                .join("")
+            ? `
+              <h2 class="gallery-title">Dokumentasi Proyek</h2>
+              <div class="gallery-row">
+                ${blog.inline_image
+                  .map(function (item) {
+                    return `
+                      <div class="gallery-card">
+                        <img src="/${item.src}" alt="${item.title}">
+                        <div class="gallery-overlay">
+                          <span>${item.title}</span>
+                        </div>
+                      </div>
+                    `;
+                  })
+                  .join("")}
+              </div>
+            `
             : "<p>blog images coming soon.</p>"
         }
       </div>

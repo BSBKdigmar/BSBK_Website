@@ -718,6 +718,98 @@ button { cursor: pointer; border: none; background:none; }
   margin-bottom: .5rem;
 }
 
+/* ===============================
+   INLINE IMAGE SECTION
+================================= */
+
+.detail-gallery {
+  margin-top: 3rem;
+}
+
+.gallery-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.gallery-item {
+  margin-bottom: 3rem;
+}
+
+.gallery-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.gallery-item img {
+  width: 50%;              
+  max-width: 500px;      
+  margin: 0 auto;          
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   HORIZONTAL GALLERY
+================================= */
+
+.gallery-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;      /* allows scroll if screen small */
+  padding-bottom: 8px;
+}
+
+.gallery-card {
+  position: relative;
+  flex: 0 0 220px;       /* width of each image */
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+
+/* hover zoom */
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== Overlay ===== */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.gallery-overlay span {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* show title on hover */
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
 /* ================================
     Back Button
 ================================ */

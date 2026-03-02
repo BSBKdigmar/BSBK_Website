@@ -37,23 +37,55 @@
     "category": "Pengolahan Air",
     "image": "../../images/Blog_Picture/Air_Bukan_Kemewahan.png",
     "date": "2026-02-16",
-    "inline_image":[]
+    "inline_image":[
+    {
+      "title":"pengolahan IPA HFNF air gambut , Kab. Bengkalis, Riau",
+      "src":"images/Blog_Picture/Inline_Image/kebutuhan air berkualitas/Picture1.jpg"
+    },
+    {
+      "title":"SWRO Kab Ende, NTT",
+      "src":"images/Blog_Picture/Inline_Image/kebutuhan air berkualitas/Picture2.jpg"
+    },
+    {
+      "title":"SPAM AKPOL dengan membrane UV + UF",
+      "src":"images/Blog_Picture/Inline_Image/kebutuhan air berkualitas/Picture3.jpg"
+    },
+    {
+      "title":"IPA Konvensional Sakotapan, Sumatera Barat",
+      "src":"images/Blog_Picture/Inline_Image/kebutuhan air berkualitas/Picture4.jpg"
+    }
+    ]
   },
   {
     "id": "Air-Gambut-Siap-Minum",
     "title": "Bagaimana Cara mengolah Air Gambut menjadi air siap minum",
     "excerpt": "Melalui teknologi Hollow Fiber Direct Nanofiltration (HFNF), <a href=\"https://bayusuryabaktikonstruksi.co.id\" title=\"PT Bayu Surya Bakti Konstruksi - The Water Specialist\" class=\"company-link\">PT Bayu Surya Bakti Konstruksi</a> berhasil mengolah air gambut yang bersifat asam dan berwarna menjadi air layak minum berstandar nasional.",
-    "content": "<p>Air gambut ternyata dapat diolah menjadi air siap minum. Namun, prosesnya tidak sesederhana pengolahan air pada umumnya. Air gambut memiliki karakteristik alami yang cukup menantang: bersifat asam, berwarna cokelat tua, serta mengandung zat organik terlarut (Natural Organic Matter/NOM) dalam kadar tinggi.</p><p>Kandungan warna pada air gambut dikenal sangat sulit dihilangkan apabila hanya menggunakan teknologi Instalasi Pengolahan Air (IPA) konvensional. Hal ini disebabkan karena partikel NOM berukuran jauh lebih kecil dibandingkan porositas media saringan pasir, sehingga tidak dapat tersaring secara optimal.</p><p>Menjawab tantangan tersebut, <a href=\"https://bayusuryabaktikonstruksi.co.id\" title=\"PT Bayu Surya Bakti Konstruksi - The Water Specialist\" class=\"company-link\">PT Bayu Surya Bakti Konstruksi</a> hadir sebagai pionir di Indonesia dan hingga saat ini masih menjadi satu-satunya perusahaan yang berhasil mengolah air gambut hingga memenuhi standar air minum. Keberhasilan ini dibuktikan melalui implementasi nyata di Kota Dumai, yang kini menjadi kota pertama sekaligus role model nasional dalam pengolahan air gambut menjadi air layak minum.</p><p>Keunggulan <a href=\"https://bayusuryabaktikonstruksi.co.id\" title=\"PT Bayu Surya Bakti Konstruksi - The Water Specialist\" class=\"company-link\">PT Bayu Surya Bakti Konstruksi</a> terletak pada penerapan teknologi filtrasi membran canggih, yaitu Hollow Fiber Direct Nanofiltration (HFNF). Teknologi ini memiliki porositas kurang dari 1 nanometer dengan Molecular Weight Cut-Off (MWCO) di bawah 800 Dalton, sehingga mampu menyaring partikel NOM secara efektif, termasuk senyawa penyebab warna cokelat pada air gambut.</p><p>Dengan teknologi ini, air gambut yang sebelumnya dianggap sulit diolah kini dapat diubah menjadi air bersih, jernih, dan aman untuk dikonsumsi, sehingga membuka peluang baru bagi pemenuhan kebutuhan air minum berkelanjutan di wilayah lahan gambut Indonesia.</p><h3>Diagram Alir Pengolahan Air Gambut dengan Teknologi Hollow Fiber NF</h3>",
+    "content": "<p>Air gambut ternyata dapat diolah menjadi air siap minum. Namun, prosesnya tidak sesederhana pengolahan air pada umumnya. Air gambut memiliki karakteristik alami yang cukup menantang: bersifat asam, berwarna cokelat tua, serta mengandung zat organik terlarut (Natural Organic Matter/NOM) dalam kadar tinggi.</p><p>Kandungan warna pada air gambut dikenal sangat sulit dihilangkan apabila hanya menggunakan teknologi Instalasi Pengolahan Air (IPA) konvensional. Hal ini disebabkan karena partikel NOM berukuran jauh lebih kecil dibandingkan porositas media saringan pasir, sehingga tidak dapat tersaring secara optimal.</p><p>Menjawab tantangan tersebut, <a href=\"https://bayusuryabaktikonstruksi.co.id\" title=\"PT Bayu Surya Bakti Konstruksi - The Water Specialist\" class=\"company-link\">PT Bayu Surya Bakti Konstruksi</a> hadir sebagai pionir di Indonesia dan hingga saat ini masih menjadi satu-satunya perusahaan yang berhasil mengolah air gambut hingga memenuhi standar air minum. Keberhasilan ini dibuktikan melalui implementasi nyata di Kota Dumai, yang kini menjadi kota pertama sekaligus role model nasional dalam pengolahan air gambut menjadi air layak minum.</p><p>Keunggulan <a href=\"https://bayusuryabaktikonstruksi.co.id\" title=\"PT Bayu Surya Bakti Konstruksi - The Water Specialist\" class=\"company-link\">PT Bayu Surya Bakti Konstruksi</a> terletak pada penerapan teknologi filtrasi membran canggih, yaitu Hollow Fiber Direct Nanofiltration (HFNF). Teknologi ini memiliki porositas kurang dari 1 nanometer dengan Molecular Weight Cut-Off (MWCO) di bawah 800 Dalton, sehingga mampu menyaring partikel NOM secara efektif, termasuk senyawa penyebab warna cokelat pada air gambut.</p><p>Dengan teknologi ini, air gambut yang sebelumnya dianggap sulit diolah kini dapat diubah menjadi air bersih, jernih, dan aman untuk dikonsumsi, sehingga membuka peluang baru bagi pemenuhan kebutuhan air minum berkelanjutan di wilayah lahan gambut Indonesia.</p>",
     "category": "Pengolahan Air",
     "image": "../../images/Blog_Picture/Mengolah_Air_Gambut.png",
     "date": "2026-02-16",
     "inline_image":[
-      "images/Blog_Picture/Inline_Image/Pengolahan air gambut/Diagram Alir Pengolahan Air Gambut.png",
-      "images/Blog_Picture/Inline_Image/Pengolahan air gambut/Hasil olahan Air.jpg",
-      "images/Blog_Picture/Inline_Image/Pengolahan air gambut/Penghargaan dari Kota dumai.jpg",
-      "images/Blog_Picture/Inline_Image/Pengolahan air gambut/Pengolahan dengan Hollow Fiber.jpg",
-      "images/Blog_Picture/Inline_Image/Pengolahan air gambut/Spam HNF Kota Dumai.jpg"
-    ]
+    {
+      "title":"Diagram Alir Pengolahan Air Gambut dengan Teknologi Hollow Fiber NF",
+      "src":"images/Blog_Picture/Inline_Image/Pengolahan air gambut/Diagram Alir Pengolahan Air Gambut.png"
+    },
+    {
+      "title":"Hasil Olahan Air Gambut",
+      "src":"images/Blog_Picture/Inline_Image/Pengolahan air gambut/Hasil olahan Air.jpg"
+    },
+    {
+      "title":"Penghargaan dari Kota Dumai",
+      "src":"images/Blog_Picture/Inline_Image/Pengolahan air gambut/Penghargaan dari Kota dumai.jpg"
+    },
+    {
+      "title":"Pengolahan dengan Hollow Fiber",
+      "src":"images/Blog_Picture/Inline_Image/Pengolahan air gambut/Pengolahan dengan Hollow Fiber.jpg"
+    },
+    {
+      "title":"SPAM HNF Kota Dumai",
+      "src":"images/Blog_Picture/Inline_Image/Pengolahan air gambut/Spam HNF Kota Dumai.jpg"
+    }
+  ]
   },
   {
     "id": "Air-Tanah-Sungai-Potable-Water",
@@ -64,7 +96,18 @@
     "image": "../../images/Blog_Picture/Mengolah_Air_Tanah&Sungai.png",
     "date": "2026-02-16",
     "inline_image":[
-
+    {
+      "title":"SPAM Istana Negara Jakarta",
+      "src":"images/Blog_Picture/Inline_Image/Air tanah sungai potable water/Picture1.jpg"
+    },
+    {
+      "title":"SPAM KSPN Mandalika",
+      "src":"images/Blog_Picture/Inline_Image/Air tanah sungai potable water/Picture2.jpg"
+    },
+    {
+      "title":"SPAM Pulau Sulabesi Provinsi Maluku Utara",
+      "src":"images/Blog_Picture/Inline_Image/Air tanah sungai potable water/Picture3.jpg "
+    }
     ]
   }
 
