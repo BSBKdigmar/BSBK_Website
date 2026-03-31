@@ -89,7 +89,7 @@
                 <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@bsbkonstruksi.co.id" class="round-yellow"><i class="fas fa-envelope"></i></a>
             </div>
 
-           <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Button -->
             <div class="nav-actions-mobile">
                 <div class="lang-selector mobile-lang-selector">
                     <button id="lang-btn-mobile">
@@ -149,20 +149,22 @@
     <section class="featured-blog">
         <div class="container">
             <div class="featured-card">
-                <img src="../../images/Blog_Picture/Mengolah_Air_Tanah&Sungai.png" alt="Featured Blog">
+
+                <img id="featured-image" src="" alt="Featured Blog">
 
                 <div class="featured-content">
-                    <span class="blog-category">Cerita BSBK</span>
-                    <h2>
-                        Bagaimana BSBK Mengolah Air Tanah & Sungai Menjadi Potable Water Berkualitas
-                    </h2>
-                    <p>
-                        Melalui proses pengolahan terintegrasi yang mengacu pada Permenkes No. 2 Tahun 2023, PT Bayu Surya Bakti Konstruksi menghadirkan solusi air siap minum yang aman, sehat, dan berkualitas tinggi di seluruh Indonesia.
-                    </p>
+                    <span id="featured-category" class="blog-category"></span>
+
+                    <h2 id="featured-title"></h2>
+
+                    <p id="featured-excerpt"></p>
+
                     <br>
-                    <a href="blogs/blog_detail/blog_detail.html?id=Air-Tanah-Sungai-Potable-Water" class="blog-btn">
+
+                    <a id="featured-link" class="blog-btn">
                         Baca Selengkapnya →
                     </a>
+
                 </div>
             </div>
         </div>
@@ -184,8 +186,6 @@
         <div class="pagination">
             <a href="#">‹</a>
             <a class="active" href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
             <a href="#">›</a>
         </div>
     </div>
@@ -239,6 +239,27 @@
                     this.parentElement.classList.toggle('open');
                 });
             });
+        });
+        </script>
+
+        <script>
+        fetch('blogs/data/blog.json')
+        .then(response => response.json())
+        .then(data => {
+
+            const latest = data[data.length - 1];
+
+            document.getElementById("featured-image").src = latest.image.replace("../../", "");
+
+            document.getElementById("featured-category").textContent = latest.category;
+
+            document.getElementById("featured-title").textContent = latest.title;
+
+            document.getElementById("featured-excerpt").innerHTML = latest.excerpt;
+
+            document.getElementById("featured-link").href =
+                "blogs/blog_detail/blog_detail.html?id=" + latest.id;
+
         });
         </script>
 

@@ -1,11 +1,12 @@
 const params = new URLSearchParams(window.location.search);
 const blogId = params.get("id");
 
-fetch("../../blogs/data/blog.json")
+fetch("../data/blog.json")
   .then(function (res) {
     return res.json();
   })
   .then(function (blogs) {
+
     const blog = blogs.find(function (b) {
       return b.id === blogId;
     });
@@ -22,7 +23,7 @@ fetch("../../blogs/data/blog.json")
       <p class="blog-meta"><strong>${blog.date}</strong> | ${blog.category}</p>
 
       <div class="blog-hero">
-        <img src="../../${blog.image}" alt="${blog.title}">
+        <img src="${blog.image}" alt="${blog.title}">
       </div>
 
       <div class="blog-content">
@@ -39,7 +40,7 @@ fetch("../../blogs/data/blog.json")
                   .map(function (item) {
                     return `
                       <div class="gallery-card">
-                        <img src="/${item.src}" alt="${item.title}">
+                        <img src="../../${item.src}" alt="${item.title}">
                         <div class="gallery-overlay">
                           <span>${item.title}</span>
                         </div>

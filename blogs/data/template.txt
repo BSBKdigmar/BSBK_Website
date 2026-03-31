@@ -6,4 +6,10 @@
     "category": "",
     "image": "",
     "date": ""
+    "inline_image":[
+    {
+      "title":"",
+      "src":""
+    }
+    ]
   }
