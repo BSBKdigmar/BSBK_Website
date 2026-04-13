@@ -8,7 +8,7 @@ fetch("../data/blog.json")
   .then(function (blogs) {
 
     const blog = blogs.find(function (b) {
-      return b.id === blogId;
+      return b.id.toLowerCase() === blogId.toLowerCase();
     });
 
     const container = document.getElementById("blog-detail");
