@@ -756,6 +756,14 @@ p {
     align-items: stretch;
 }
 
+/* Keep the job-openings heading aligned to the listings width */
+.job-openings-block h2 {
+    max-width: 960px;
+    margin: 0 auto 1.25rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
 .job-card {
     padding: 32px;
     border-radius: 24px;
