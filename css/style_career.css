@@ -787,7 +787,38 @@ p {
 .job-card-footer {
     margin-top: auto;
     display: flex;
-    flex-direction: column;
+    .job-openings-block {
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* center inner max-width wrapper */
+        gap: 1rem;
+    }
+
+    .job-listings {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        align-items: stretch;
+        padding: 0 1rem; /* ensure consistent side padding on small screens */
+        box-sizing: border-box;
+    }
+
+    /* Ensure heading and listings share identical centered max-width and left text alignment */
+    .job-openings-block h2,
+    .job-openings-block .job-listings {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        text-align: left;
+    }
     gap: 0.75rem;
     width: 100%;
 }
