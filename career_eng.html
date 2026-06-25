@@ -159,7 +159,7 @@
         </div>
 
         <!-- WHY JOIN US -->
-        <div class="career-block">
+        <div class="career-block why-join-block">
             <h2>Why Join Us?</h2>
 
             <p>
@@ -192,8 +192,16 @@
             </p>
         </div>
 
+        <!-- JOB OPENINGS -->
+        <div class="career-block job-openings-block">
+            <h2>Current Open Positions</h2>
+            <div id="job-listings" class="job-listings">
+                <p class="job-loading">Loading openings...</p>
+            </div>
+        </div>
+
         <!-- HOW TO APPLY -->
-        <div class="career-block">
+        <div class="career-block apply-block">
             <h2>How to Apply</h2>
 
             <form
@@ -299,6 +307,68 @@ document.addEventListener('DOMContentLoaded', function () {
             this.parentElement.classList.toggle('open');
         });
     });
+});
+</script>
+
+<script>
+window.addEventListener('load', function () {
+    const projectId = "k39n2cfi";
+    const dataset = "production";
+    const query = encodeURIComponent(`*[_type == "jobOpening" && !(_id in path('drafts.**'))] | order(_createdAt desc){title, description, criteria, requirements, howToApply, applicationDeadline}`);
+    const target = document.getElementById('job-listings');
+
+    if (!target) return;
+
+    fetch(`https://${projectId}.api.sanity.io/v2021-06-07/data/query/${dataset}?query=${query}`)
+        .then(function (response) {
+            if (!response.ok) {
+                throw new Error('HTTP ' + response.status);
+            }
+            return response.json();
+        })
+        .then(function (data) {
+            const jobs = Array.isArray(data.result) ? data.result : [];
+            if (!jobs.length) {
+                target.innerHTML = '<p class="job-empty">There are currently no openings. Please check back later.</p>';
+                return;
+            }
+
+            function renderList(label, items) {
+                if (!Array.isArray(items) || !items.length) return '';
+                const lis = items.map(function (item) {
+                    if (typeof item === 'string') return '<li>' + item + '</li>';
+                    if (item && Array.isArray(item.children)) return '<li>' + item.children.map(function (c) { return c.text || ''; }).join('') + '</li>';
+                    return '<li>' + String(item) + '</li>';
+                }).join('');
+                return '<div class="job-card-section">'
+                    + '<h4>' + label + '</h4>'
+                    + '<ul>' + lis + '</ul>'
+                    + '</div>';
+            }
+
+            target.innerHTML = jobs.map(function (job) {
+                const criteriaHtml = renderList('Criteria', job.criteria);
+                const requirementsHtml = renderList('Requirements', job.requirements);
+                const deadline = job.applicationDeadline ? ('<p class="job-deadline"><strong>Deadline:</strong> ' + new Date(job.applicationDeadline).toLocaleDateString('en-US') + '</p>') : '';
+
+                return '<article class="job-card">'
+                    + '<div class="job-card-main">'
+                        + '<h3>' + (job.title || 'Open Position') + '</h3>'
+                        + (job.description ? '<p>' + job.description + '</p>' : '')
+                        + criteriaHtml
+                        + requirementsHtml
+                    + '</div>'
+                    + '<div class="job-card-footer">'
+                        + deadline
+                        + '<p class="job-apply"><strong>How to Apply:</strong> ' + (job.howToApply || 'Please submit your application using the form below.') + '</p>'
+                    + '</div>'
+                    + '</article>';
+            }).join('');
+        })
+        .catch(function (error) {
+            target.innerHTML = '<p class="job-empty">Unable to load openings right now. Please try again later.</p>';
+            console.error('Sanity job fetch error:', error);
+        });
 });
 </script>
 

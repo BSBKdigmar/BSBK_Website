@@ -237,23 +237,67 @@
         </script>
 
         <script>
-        fetch('blogs/data/blog.json')
-        .then(response => response.json())
-        .then(data => {
+        window.addEventListener('load', () => {
+            console.log('Featured blog script running');
 
-            const latest = data[data.length - 1];
+            const projectId = "k39n2cfi";
+            const dataset = "production";
 
-            document.getElementById("featured-image").src = latest.image.replace("../../", "");
+            const featuredQuery = encodeURIComponent(`
+*[_type == "blog"] | order(publishedDate desc)[0] {
+  title,
+  "slug": slug.current,
+  excerpt,
+  category,
+  publishedDate,
+  thumbnail{
+    asset->{
+      url
+    }
+  }
+}
+            `);
 
-            document.getElementById("featured-category").textContent = latest.category;
+            fetch(`https://${projectId}.api.sanity.io/v2021-06-07/data/query/${dataset}?query=${featuredQuery}`)
+            .then(response => {
+                console.log('Featured fetch status:', response.status, response.statusText);
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Featured fetch data:', data);
+                const featured = Array.isArray(data.result)
+                    ? data.result[0]
+                    : data.result;
 
-            document.getElementById("featured-title").textContent = latest.title;
+                if (!featured) {
+                    console.warn("No featured blog found in Sanity");
+                    return;
+                }
 
-            document.getElementById("featured-excerpt").innerHTML = latest.excerpt;
+                const image = document.getElementById("featured-image");
+                const title = document.getElementById("featured-title");
+                const excerpt = document.getElementById("featured-excerpt");
+                const category = document.getElementById("featured-category");
+                const link = document.getElementById("featured-link");
 
-            document.getElementById("featured-link").href =
-                "blogs/blog_detail/blog_detail.html?id=" + latest.id;
+                if (!image || !title || !excerpt || !category || !link) {
+                    console.error('Featured DOM elements missing');
+                    return;
+                }
 
+                image.src = featured.thumbnail?.asset?.url || "images/default-blog.jpg";
+                category.textContent = featured.category || "";
+                title.textContent = featured.title || "";
+                excerpt.innerHTML = featured.excerpt || "";
+                link.href = "blogs/blog_detail/blog_detail.html?slug=" + (featured.slug || "");
+                link.textContent = "Baca Selengkapnya →";
+            })
+            .catch(err => {
+                console.error("Featured blog fetch error:", err);
+            });
         });
         </script>
 

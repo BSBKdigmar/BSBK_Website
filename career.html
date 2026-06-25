@@ -159,7 +159,7 @@
             </div>
 
             <!-- WHY JOIN US -->
-            <div class="career-block">
+            <div class="career-block why-join-block">
                 <h2>Mengapa Bergabung Bersama Kami ?</h2>
 
                 <p>
@@ -183,8 +183,16 @@
                 </p>
             </div>
 
+            <!-- JOB OPENINGS -->
+            <div class="career-block job-openings-block">
+                <h2>Posisi Saat Ini Terbuka</h2>
+                <div id="job-listings" class="job-listings">
+                    <p class="job-loading">Memuat lowongan...</p>
+                </div>
+            </div>
+
             <!-- HOW TO APPLY -->
-            <div class="career-block">
+            <div class="career-block apply-block">
                 <h2>Bagaimana Cara Melamar?</h2>
 
                 <form
@@ -287,6 +295,68 @@
                     this.parentElement.classList.toggle('open');
                 });
             });
+        });
+        </script>
+
+        <script>
+        window.addEventListener('load', function () {
+            const projectId = "k39n2cfi";
+            const dataset = "production";
+            const query = encodeURIComponent(`*[_type == "jobOpening" && !(_id in path('drafts.**'))] | order(_createdAt desc){title, description, criteria, requirements, howToApply, applicationDeadline}`);
+            const target = document.getElementById('job-listings');
+
+            if (!target) return;
+
+            function renderList(label, items) {
+                if (!Array.isArray(items) || !items.length) return '';
+                const lis = items.map(function (item) {
+                    if (typeof item === 'string') return '<li>' + item + '</li>';
+                    if (item && Array.isArray(item.children)) return '<li>' + item.children.map(function (c) { return c.text || ''; }).join('') + '</li>';
+                    return '<li>' + String(item) + '</li>';
+                }).join('');
+                return '<div class="job-card-section">'
+                    + '<h4>' + label + '</h4>'
+                    + '<ul>' + lis + '</ul>'
+                    + '</div>';
+            }
+
+            fetch(`https://${projectId}.api.sanity.io/v2021-06-07/data/query/${dataset}?query=${query}`)
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('HTTP ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+                    const jobs = Array.isArray(data.result) ? data.result : [];
+                    if (!jobs.length) {
+                        target.innerHTML = '<p class="job-empty">Saat ini tidak ada lowongan. Silakan cek kembali nanti.</p>';
+                        return;
+                    }
+
+                    target.innerHTML = jobs.map(function (job) {
+                        const criteriaHtml = renderList('Kriteria', job.criteria);
+                        const requirementsHtml = renderList('Persyaratan', job.requirements);
+                        const deadline = job.applicationDeadline ? ('<p class="job-deadline"><strong>Batas Waktu:</strong> ' + new Date(job.applicationDeadline).toLocaleDateString('id-ID') + '</p>') : '';
+
+                        return '<article class="job-card">'
+                            + '<div class="job-card-main">'
+                                + '<h3>' + (job.title || 'Posisi Terbuka') + '</h3>'
+                                + (job.description ? '<p>' + job.description + '</p>' : '')
+                                + criteriaHtml
+                                + requirementsHtml
+                            + '</div>'
+                            + '<div class="job-card-footer">'
+                                + deadline
+                                + '<p class="job-apply"><strong>Cara Melamar:</strong> ' + (job.howToApply || 'Silakan kirim aplikasi melalui formulir di bawah.') + '</p>'
+                            + '</div>'
+                            + '</article>';
+                    }).join('');
+                })
+                .catch(function (error) {
+                    target.innerHTML = '<p class="job-empty">Gagal memuat lowongan saat ini. Silakan coba lagi nanti.</p>';
+                    console.error('Sanity job fetch error:', error);
+                });
         });
         </script>
 
