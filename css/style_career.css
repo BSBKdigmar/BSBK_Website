@@ -831,13 +831,17 @@ p {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
     box-sizing: border-box;
     text-align: left;
 }
 
 .job-openings-inner h2 {
-  padding-left: 32px;
+  padding: 0 1rem;
+}
+
+.job-openings-inner .job-listings {
+  padding: 0 1rem;
 }
 
 .job-card h3 {
