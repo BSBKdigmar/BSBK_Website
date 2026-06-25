@@ -798,7 +798,7 @@ p {
     border: 1px solid #e5e7eb;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center inner max-width wrapper */
+    align-items: stretch;
     gap: 1rem;
 }
 
@@ -831,17 +831,17 @@ p {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1rem;
     box-sizing: border-box;
     text-align: left;
 }
 
 .job-openings-inner h2 {
-  padding: 0 1rem;
+  margin: 0 0 1.25rem;
 }
 
 .job-openings-inner .job-listings {
-  padding: 0 1rem;
+  width: 100%;
 }
 
 .job-card h3 {
