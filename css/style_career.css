@@ -836,6 +836,10 @@ p {
     text-align: left;
 }
 
+.job-openings-inner h2 {
+  padding-left: 32px;
+}
+
 .job-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0;
