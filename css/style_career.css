@@ -905,6 +905,36 @@ p {
         margin-left: 0;
         margin-right: 0;
     }
+
+    /* FORCE job-openings heading left on mobile */
+    .job-openings-block {
+        text-align: left !important;
+        display: block !important;
+        padding: 0 !important;
+    }
+
+    .job-openings-inner {
+        text-align: left !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .job-openings-inner h2 {
+        text-align: left !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    .job-listings {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
 }
 
 /* Block headings */
