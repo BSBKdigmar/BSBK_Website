@@ -811,13 +811,23 @@ p {
     margin: 0 auto;
     text-align: left;
     align-items: stretch;
-    padding: 0 1rem; /* ensure consistent side padding on small screens */
+    padding: 0; /* ensure consistent side padding on small screens */
     box-sizing: border-box;
 }
 
 /* Ensure heading and listings share identical centered max-width and left text alignment */
 .job-openings-block h2,
 .job-openings-block .job-listings {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Inner wrapper used in HTML to precisely align heading and listings */
+.job-openings-inner {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
