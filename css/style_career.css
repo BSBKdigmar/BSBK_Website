@@ -727,11 +727,6 @@ p {
     background: #f9fafb;
 }
 
-.job-openings-block {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-}
-
 .apply-block {
     background: #102a58;
     color: #ffffff;
@@ -744,24 +739,6 @@ p {
 
 .apply-block p {
     color: #e5e7eb;
-}
-
-.job-listings {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: left;
-    align-items: stretch;
-}
-
-/* Keep the job-openings heading aligned to the listings width */
-.job-openings-block h2 {
-    max-width: 960px;
-    margin: 0 auto 1.25rem;
-    padding: 0 1rem;
-    text-align: left;
 }
 
 .job-card {
@@ -815,16 +792,7 @@ p {
     box-sizing: border-box;
 }
 
-/* Ensure heading and listings share identical centered max-width and left text alignment */
-.job-openings-block h2,
-.job-openings-block .job-listings {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: left;
-}
+
 
 /* Inner wrapper used in HTML to precisely align heading and listings */
 .job-openings-inner {
