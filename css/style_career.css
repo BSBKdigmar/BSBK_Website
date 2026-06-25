@@ -777,14 +777,16 @@ p {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.75rem;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .job-listings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    max-width: 960px;
+    gap: 1rem;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     text-align: left;
@@ -793,11 +795,9 @@ p {
     box-sizing: border-box;
 }
 
-
-
 /* Inner wrapper used in HTML to precisely align heading and listings */
 .job-openings-inner {
-    max-width: 960px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -811,7 +811,9 @@ p {
 
 .job-openings-inner .job-listings {
   width: 100%;
+  max-width: 100%;
 }
+
 
 .job-card h3 {
     font-size: 1.5rem;
@@ -912,7 +914,8 @@ p {
         text-align: left !important;
         display: flex !important;
         flex-direction: column !important;
-        padding: 1.5rem 1rem !important;
+        padding: 1rem 0.75rem !important;
+        overflow: hidden !important;
     }
 
     .job-openings-inner {
@@ -921,6 +924,7 @@ p {
         margin: 0 !important;
         padding: 0 !important;
         box-sizing: border-box !important;
+        max-width: 100% !important;
     }
 
     .job-openings-inner h2 {
@@ -936,7 +940,9 @@ p {
         margin-right: 0 !important;
         padding: 0 !important;
         width: 100% !important;
+        max-width: 100% !important;
     }
+
 }
 
 /* Block headings */
